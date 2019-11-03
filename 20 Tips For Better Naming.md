@@ -62,7 +62,7 @@ ex) SavingAccount 는 Account에서 파생한다.
 <br>
 
 ## 7. 변수명
-변수는 종종 class의 인스턴스를 보유하기 때문에 명사가 되어야 한다. 그들은 종종 그들이 인용하는 클래스 명에서 파생 된다. Boolean 명사들은 서술형으로 쓰여져야 한다. 
+변수는 종종 class의 인스턴스를 보유하기 때문에 명사가 되어야 한다. 그들은 종종 그들이 인용하는 클래스 명에서 파생 된다. Boolean 명사들은 서술형으로 쓰여져야 한다. <br>
 ex) isEmpty 또는 isTerminated 
 
 <br>
@@ -75,11 +75,13 @@ Method는 *postPayment(), deletePage(), save()*와 같이 동사 또는 동사�
 ## 9. 변수명의 길이와 범위
 변수명은 범위의 크기에 따라 길이가 일치해야 한다. 만약 변수가 매우 짧은 범위에서 사용된다면 면수명은 매우 짧아야 한다. 반대로 만약 변수가 장기간 범위 내에 있는 경우 변수명은 더 자세하고 더 길어야 한다.
 
+<br>
+
 ## 10. method/class 명의 길이와 범위
 method와 class의 경우 이름의 길이는 범위의 크기와 반비례해야 한다. *Public method의 경우 자주 호출되기 때문에 일반적으로 짧은 이름이 좋다. *Private method class의 범위 내에서 호출되기 때문에 긴 이름을 사용하는 것이 좋다. 하지만 *파생 class명은 이 규칙에서 제외된다. 파생 class가 많을수록 기본 class명에 형용사가 많이 적용 된고 길어질 것이다.
 
 *Public/Private method: <https://webclub.tistory.com/312> <br>
-*파생 class: 기초 클래스의 모든 특성을 물려받아 새롭게 작성된 클래스 
+*파생 class: 기초 클래스의 모든 특성을 물려받아 새롭게 작성된 클래스 <br>
  (참조: <http://tcpschool.com/cpp/cpp_inheritance_derivedClass>)
 
 <br>
