@@ -49,7 +49,8 @@ int fileAgeInDays;
 
 * 당신은 도메인을 이해하지 못하고 있으며 계속해서 더 많은 정보를 모을 필요가 있다.
 
-*code smell : "any symptom in the source code of a program that possibly indicates a deeper problem"
+*code smell : <br>
+"any symptom in the source code of a program that possibly indicates a deeper problem" <br>
 더 큰 문제들이 있음을 가리키고 있을만한, 소스 코드 상의 증상들이다.(버그와는 다르다. 디자인 패턴과 관련이 있다.)
 
 <br>
@@ -77,7 +78,7 @@ Method는 *postPayment(), deletePage(), save()*와 같이 동사 또는 동사�
 ## 10. method/class 명의 길이와 범위
 method와 class의 경우 이름의 길이는 범위의 크기와 반비례해야 한다. *Public method의 경우 자주 호출되기 때문에 일반적으로 짧은 이름이 좋다. *Private method class의 범위 내에서 호출되기 때문에 긴 이름을 사용하는 것이 좋다. 하지만 *파생 class명은 이 규칙에서 제외된다. 파생 class가 많을수록 기본 class명에 형용사가 많이 적용 된고 길어질 것이다.
 
-*Public/Private method: <https://webclub.tistory.com/312>
+*Public/Private method: <https://webclub.tistory.com/312> <br>
 *파생 class: 기초 클래스의 모든 특성을 물려받아 새롭게 작성된 클래스 
  (참조: <http://tcpschool.com/cpp/cpp_inheritance_derivedClass>)
 
