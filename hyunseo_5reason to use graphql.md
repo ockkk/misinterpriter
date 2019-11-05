@@ -115,6 +115,6 @@ GraphQL 커뮤니티 역시 빠르게 성장하고 있습니다. [많은 중소 
 
 GraphQL을 시작하려면 다음을 참고하십시오.
 
-- 로 GraphQL 서버를 구축하는 방법 : [graphql-yoga](https://blog.graph.cool/tutorial-how-to-build-a-graphql-server-with-graphql-yoga-6da86f346e68)
+- 오늘 바로 GraphQL 서버를 구축하는 방법 : [graphql-yoga](https://blog.graph.cool/tutorial-how-to-build-a-graphql-server-with-graphql-yoga-6da86f346e68)
 - GraphQL 사용 방법 : [풀 스택 GraphQL 튜토리얼](https://www.howtographql.com/)
 - GraphQL boilerplates : [Node, TypeScript, React, Vue 등을 포함한 GraphQL 프로젝트 용 스타터 키트](https://github.com/graphql-boilerplates)
