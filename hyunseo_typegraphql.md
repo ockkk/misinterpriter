@@ -4,7 +4,7 @@
 
 <br/>
 
-출저 : https://www.prisma.io/blog/top-5-reasons-to-use-graphql-b60cfa683511
+출저 : https://medium.com/@MichalLytek/graphql-typescript-typegraphql-ba0225cb4bed
 
 <br/>
 
@@ -259,6 +259,17 @@ interfaces, enums, unions 혹은 custom scalars 를 사용하고 계신가요? �
 TypeGraphQL 은 이 역시 완벽하게 지원합니다!
 
 좀 더 복잡한 경우를 확인하려면 [예제 섹션](https://typegraphql.ml/docs/examples.html)으로
-이동하여 TypeGraphQL이 TypeORM과 얼마나 잘 통합되는지 확인할 수 있습니다.
+이동하여 TypeGraphQL이 TypeORM 과 얼마나 잘 통합되는지 확인할 수 있습니다.
 
-If you want to see how it looks in more complicated case, you can go to the Examples section where you can find how nice TypeGraphQL integrates with TypeORM. Want to learn about more advanced concepts like authorization checker, inheritance support, field resolvers or middlewares? Check out the Docs section.
+권한 부여 , 상속 지원 , 필드 resolver 혹은 middle 와 같은 고급 개념을 배우고 싶다면
+이 [예제 섹션](https://typegraphql.ml/docs/introduction.html) 에서 확인하실 수 있습니다.
+
+<br/>
+
+### **v1.0을 향해**
+
+현재 출시 된 버전은 MVP (Minimum Viable Product)입니다.
+잘 테스트 되고 있으며 (96 % 적용 범위, 8000 줄의 테스트 코드) 이미 구현 된 계획된 기능의 95 %가 있습니다.
+그러나 [1.0.0 릴리스](https://github.com/MichalLytek/type-graphql/milestone/3) 이전에 수행해야 할 작업이 있으며 대부분 문서 (웹 사이트, API 참조 및 jsdoc) 및 GraphQL 사양 또는 기타 도구와의 호환성에 관한 것입니다.
+더 나은 TypeORM, Prisma 및 데이터 로더 통합 또는 사용자 지정 데코레이터 및 메타 데이터 주석 지원과 같은 더 많은 기능에 대한 계획도 있습니다.
+전체 아이디어 목록은 [GitHub 리포지토리](https://github.com/MichalLytek/type-graphql/issues?q=is%3Aissue+is%3Aopen+label%3A%22Enhancement+%3Anew%3A%22+sort%3Aupdated-desc)에서 확인할 수 있습니다. 또한 [여기서](https://github.com/MichalLytek/type-graphql/projects/1) 프로젝트 보드에서 개발 진행 상황을 확인할 수도 있습니다.
