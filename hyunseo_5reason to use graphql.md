@@ -1,5 +1,6 @@
 # 우리가 GraphQL 을 사용해야 하는 5가지 이유.
 
+<br/>
 - **본기사는 [Top 5 Reasons to Use GraphQL (MARCH 20, 2018 Prisma)](https://www.prisma.io/blog/top-5-reasons-to-use-graphql-b60cfa683511) 을 번역한 기사입니다.**
 
 <br/>
