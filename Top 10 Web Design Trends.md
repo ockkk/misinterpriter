@@ -181,3 +181,9 @@
 브랜드 비전을 캡슐화하는 일관된 시각적 언어를 형성하려면 독특한 일러스트레이션, 아이콘 및 배지가 포함된 벡터 아트 컬렉션을 찾아보아라. 또한 고품질 미디어 기능을 통해 시간을 투자하여 브랜드 별 요구에 완벽하게 맞는 이미지를 찾아라.
 
 <img src="https://static.wixstatic.com/media/72c0b2_746273af61604f2e8a73e9dd2f7f8c55~mv2.gif">
+
+
+<br>
+
+### **이글은 wix blog의 Top 10 Web Design Trends for 2020의 글을 번역한 글입니다.**
+출처: <https://www.wix.com/blog/2019/11/web-design-trends-2020/>
