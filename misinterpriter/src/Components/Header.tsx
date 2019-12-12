@@ -1,6 +1,6 @@
 import React from 'react';
 import sc from 'styled-components'
-import { Button } from 'antd';
+import { Button }from 'antd'
 
 const Header: React.FC = () => {
   const Box = sc.div`
@@ -23,7 +23,10 @@ const Header: React.FC = () => {
     bottom: 17px;
   `
   const Btn = sc.button`
-
+    border: solid 1px;
+    padding: 15px 40px;
+    border-radius: 3px;
+    margin-right: 10px;
   `
   return <Box>
           <Logo>
