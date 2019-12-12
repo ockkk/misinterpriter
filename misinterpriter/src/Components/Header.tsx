@@ -22,18 +22,21 @@ const Header: React.FC = () => {
     position: relative;
     bottom: 17px;
   `
+  const Btn = sc.button`
+
+  `
   return <Box>
           <Logo>
             Misinterpriter
             <Line/>
           </Logo>
           <span style={{"float":"right"}}>
-            <Button size="large">
+            <Btn>
               main
-            </Button>
-            <Button>
+            </Btn>
+            <Btn>
               member
-            </Button>
+            </Btn>
             <Button>
               project
             </Button>
