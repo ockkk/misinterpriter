@@ -10,14 +10,17 @@ const StyledReactMarkdown = styled(ReactMarkdown).attrs({
   min-width: 300;
   max-width: 100%;
 `;
+
 export const Detail: React.FC = () => {
-  const name = "jongok";
-  const postNum = 2;
+  const name = "hyunseo";
+  const postNum = 1;
 
   const [text, setText] = useState<string>("");
   useEffect(() => {
     async function getPosts() {
-      const mdFile = await fetch(require(`Assets/jongok/${name}${postNum}.md`));
+      const mdFile = await fetch(
+        require(`Assets/hyunseo/${name}${postNum}.md`)
+      );
       const Post = await mdFile.text();
       console.log(Post);
       setText(Post);
