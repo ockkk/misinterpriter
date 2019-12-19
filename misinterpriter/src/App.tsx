@@ -4,7 +4,7 @@ import { Detail } from "../src/Pages/Detail/Detail";
 const App: React.FC = () => {
   return (
     <div>
-      <Detail />
+      <Detail name={"hyunseo"} postTitle={"hyunseo_5reason-to-use-graphql"} />
     </div>
   );
 };
