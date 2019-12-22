@@ -10,7 +10,7 @@ const Main: React.FC= () =>{
   articleArr.map((data) => {
     for(let i= 0; i< data[1].length; i++){
       articleComponent.push(
-        <Col span={8}>
+        <Col span={6}>
           <Board name={data[0]} title={data[1][i]}/>
         </Col>
         )
@@ -19,7 +19,7 @@ const Main: React.FC= () =>{
 
   return (
     <div style={{padding:"10px"}}>
-      <Row gutter={16}>
+      <Row>
         {articleComponent}
       </Row>
     </div>
