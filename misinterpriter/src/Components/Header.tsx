@@ -1,18 +1,19 @@
 import React from 'react';
 import sc from 'styled-components'
-import { Button }from 'antd'
+import { PageHeader, Button }from 'antd'
 
 const Header: React.FC = () => {
   const Box = sc.div`
     border: solid 1px silver;
-    height: 51px;
-    padding: 15px;
+    height: 80px;
+    padding: 20px;
     border-radius: 5px;
   `
   const Logo = sc.h1`
-    width: 200px;
+    font-size: 40px;
+    width: 235px;
     float: left;
-    bottom: 18px;
+    bottom: 16px;
     position: relative;
   `;
 
@@ -20,7 +21,7 @@ const Header: React.FC = () => {
     height: 5px;
     background-color: blue;
     position: relative;
-    bottom: 17px;
+    bottom: 27px;
   `
   const Btn = sc.button`
     border: solid 1px;
@@ -34,13 +35,13 @@ const Header: React.FC = () => {
             <Line/>
           </Logo>
           <span style={{"float":"right"}}>
-            <Btn>
+            <Button size="large">
               main
-            </Btn>
-            <Btn>
+            </Button>
+            <Button  size="large">
               member
-            </Btn>
-            <Button>
+            </Button>
+            <Button  size="large">
               project
             </Button>
           </span>

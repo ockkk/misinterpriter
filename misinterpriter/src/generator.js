@@ -1,4 +1,7 @@
 "use-strict";
+
+
+
 const fs = require("fs");
 const filePath = "./Assets/interpreters.json";
 
@@ -24,3 +27,6 @@ const filePath = "./Assets/interpreters.json";
     });
   });
 })();
+
+export default generetor
+
