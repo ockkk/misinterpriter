@@ -3,6 +3,7 @@ import { Button }from 'antd'
 import { Box, Logo, Line, Btn } from './Headerstyle'
 
 const Header: React.FC = () => {
+
   return <Box>
           <Logo>
             Misinterpriter

@@ -26,3 +26,9 @@ export const Btn = sc.button`
   border-radius: 3px;
   margin-right: 10px;
 `
+
+// export const Btn2 = Button`
+//   margin-right: 10px;
+//   width: 100px;
+//   height: 50px;
+// `
