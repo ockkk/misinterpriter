@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { StyledReactMarkdown, MainDiv, NaviBtn, BtnConatiner } from "./style";
+import FootBar from "../../Components/Footbar/Footbar";
 
 type DetailProps = {
   name: string;
@@ -18,21 +19,34 @@ export const Detail: React.FC<DetailProps> = props => {
       setText(Post);
     }
     getPosts();
-  }, []);
+  }, [props.name, props.postTitle]);
+
+  const scrollBtn = (position: number) => {
+    window.scrollTo(0, position);
+  };
 
   return (
     <div
       style={{
-        backgroundColor: "black"
+        backgroundColor: "white",
+        height: "100%"
       }}
     >
-      <div style={{ height: 130, backgroundColor: "black" }}>Header</div>
+      <div
+        style={{
+          height: 130,
+          backgroundColor: "rgba(0,0,0,0.9)",
+          color: "white"
+        }}
+      >
+        임시 Header
+      </div>
       <MainDiv>
         <StyledReactMarkdown source={text}></StyledReactMarkdown>
         <div
           style={{
             position: "fixed",
-            right: "5%",
+            right: "6.5%",
             bottom: "45%"
           }}
         >
@@ -40,7 +54,7 @@ export const Detail: React.FC<DetailProps> = props => {
             <div>
               <NaviBtn
                 onClick={() => {
-                  window.scrollTo(0, 0);
+                  scrollBtn(0);
                 }}
               >
                 Top
@@ -48,7 +62,7 @@ export const Detail: React.FC<DetailProps> = props => {
             </div>
             <NaviBtn
               onClick={() => {
-                window.scrollTo(0, 30000);
+                scrollBtn(30000);
               }}
             >
               Bot
@@ -56,6 +70,7 @@ export const Detail: React.FC<DetailProps> = props => {
           </BtnConatiner>
         </div>
       </MainDiv>
+      <FootBar />
     </div>
   );
 };
