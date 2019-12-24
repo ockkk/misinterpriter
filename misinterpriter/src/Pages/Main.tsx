@@ -2,6 +2,7 @@ import React from 'react';
 import Board from 'Components/Board'
 import articleData from '../Assets/articleData.json'
 import {Row, Col} from 'antd'
+import {ColBox, TagBox} from './Mainstyle'
 
 const Main: React.FC= () =>{
   var articleArr = Object.entries(articleData)
@@ -20,6 +21,11 @@ const Main: React.FC= () =>{
   return (
     <div style={{padding:"10px"}}>
       <Row>
+        <Col span={6}>
+          <ColBox>
+            <TagBox></TagBox>
+          </ColBox>
+        </Col>
         {articleComponent}
       </Row>
     </div>
