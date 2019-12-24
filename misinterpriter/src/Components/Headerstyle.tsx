@@ -1,4 +1,12 @@
 import sc from 'styled-components'
+import { Button }from 'antd'
+
+export const TitleText = sc.div`
+  font-weight: 600px;
+  font-size: 23px;
+  font-family: Fjalla One;
+  color: white;
+`;
 
 export const Box = sc.div`
   border: solid 2px #d9d9d9;
@@ -6,7 +14,8 @@ export const Box = sc.div`
   padding: 15px;
   border-radius: 5px;
 `
-export const Logo = sc.h1`
+export const Logo = sc.div`
+  height: 80px;
   position: relative;
   float: left;
   bottom: 20px;
@@ -15,20 +24,15 @@ export const Logo = sc.h1`
 `
 
 export const Line = sc.hr`
+  margin: 0px;
   height: 5px;
   background-color: blue;
   position: relative;
-  bottom: 35px; 
+  bottom: 15px; 
 `
-export const Btn = sc.button`
-  border: solid 1px;
-  padding: 15px 40px;
-  border-radius: 3px;
+export const Btn = sc(Button)`
   margin-right: 10px;
+  width: 100px;
+  height: 50px;
+  font-weight: bold;
 `
-
-// export const Btn2 = Button`
-//   margin-right: 10px;
-//   width: 100px;
-//   height: 50px;
-// `

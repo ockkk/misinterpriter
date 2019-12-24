@@ -1,5 +1,4 @@
 import React from 'react';
-import { Button }from 'antd'
 import { Box, Logo, Line, Btn } from './Headerstyle'
 
 const Header: React.FC = () => {
@@ -10,16 +9,16 @@ const Header: React.FC = () => {
             Misinterpriter
             <Line/>
           </Logo>
-          <div style={{"float":"right" , "padding": "6px"}}>
-            <Button size="large">
+          <div style={{"float":"right" , "padding": "3px"}}>
+            <Btn size="large">
               main
-            </Button>
-            <Button size="large">
+            </Btn>
+            <Btn size="large">
               member
-            </Button>
-            <Button size="large">
+            </Btn>
+            <Btn size="large">
               project
-            </Button>
+            </Btn>
           </div>
         </Box>
 }
