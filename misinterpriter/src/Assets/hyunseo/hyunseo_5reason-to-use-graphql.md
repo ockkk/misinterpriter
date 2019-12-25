@@ -1,20 +1,15 @@
 # 우리가 GraphQL 을 사용해야 하는 5가지 이유.
 
-<br/>
 - **본기사는 [Top 5 Reasons to Use GraphQL (MARCH 20, 2018 Prisma)](https://www.prisma.io/blog/top-5-reasons-to-use-graphql-b60cfa683511) 을 번역한 기사입니다.**
-
-<br/>
 
 출저 : https://www.prisma.io/blog/top-5-reasons-to-use-graphql-b60cfa683511
 
-<br/>
 GraphQL은 API 개발의 새로운 표준이 되어가고 있습니다. 이 기사에서 그 이유를 알아보겠습니다.
 
 ![노트북](https://d33wubrfki0l68.cloudfront.net/c0fb631da36f84e02a5088411fcb527894b7fe52/adf58/blog/posts/top-5-reasons-to-use-graphql.png)
 
 불과 2년 6개월 만에 그래프QL은 API 개발의 선두로 올라왔습니다.
 이 글에서는 개발자가 GraphQL을 좋아하는 이유를 설명하고 빠르게 채택된 주된 이유를 공개합니다.
-<br/>
 
 ## **1. graphQL API 는 강력한 스키마 타입을 가지고 있습니다.**
 
@@ -32,8 +27,6 @@ GraphQL 스키마는 강력한 형식이며 단순하게 표현될 수 있는 **
 스키마의 또 다른 이점은 개발자가 더 이상 수동으로 API 설명서를 작성할 필요가 없으며 대신 API를 정의하는 스키마를 기반으로 자동 생성 될 수 있다는 것 입니다. 이는 API 개발에 판도을 바꿔 놓았습니다!
 
 ### [GraphQL Server Basics: The Schema - Structure and implementation of GraphQL servers (Part I)](https://www.prisma.io/blog/graphql-server-basics-the-schema-ac5e2950214e)
-
-<br/>
 
 ## **2. 더 이상 overfetching 과 underfetching 은 없습니다.**
 
@@ -56,8 +49,6 @@ underfetching 는 오버 페치와 반대이며 API 응답에 충분한 데이�
 
 [How to wrap a REST API with GraphQL - 3-step tutorial how to easily turn a REST API into a GraphQL API](https://www.prisma.io/blog/how-to-wrap-a-rest-api-with-graphql-8bf3fb17547d)
 
-<br/>
-
 ## **3. graphQL 은 빠르게 프로덕트를 개발할 수 있게 합니다.**
 
 GraphQL은 프론트 엔드 개발자의 삶을 편하게 만듭니다. 프론트 엔드 개발자는 GraphQL 클라이언트 라이브러리 (예 : Apollo , Relay 또는 Urql ) 덕분에 기본적으로 chaching , realtime 또는 optimistic UI updates 를 자유롭게 (그래프가 아닌 경우 전체 팀이 작업 해야하는 영역입니다.) 이용할 수 있습니다.
@@ -75,8 +66,6 @@ GraphQL API 빌드 프로세스는 GraphQL 스키마를 중심으로 이루어�
 
 #### 스키마 정의 와 스키마 구현 의 차이점에 대해 자세히 알아 보려면 이 [기사](https://www.prisma.io/blog/graphql-server-basics-the-schema-ac5e2950214e) 를 확인 하세요.
 
-<br/>
-
 ## **4. graphQL API 의 구성 방식.**
 
 [스키마 스티칭](https://www.prisma.io/blog/graphql-schema-stitching-explained-schema-delegation-4c6caf468405) 아이디어 는 GraphQL 공간에서 가장 새로운 아이디어 중 하나입니다. 즉, 스키마 스티칭을 사용하면 여러 GraphQL API 를 결합하고 연결 하여 단일 API 로 병합 할 수 있습니다. React 컴포넌트를 기존 컴포넌트로 구성하는 방법과 유사하게 GraphQL API를 기존 GraphQL API로 구성 할 수도 있습니다!
@@ -88,8 +77,6 @@ GraphQL API 빌드 프로세스는 GraphQL 스키마를 중심으로 이루어�
 GraphQL 바인딩 은 GraphQL API를 재사용하고 공유하는 간단한 접근 방식을 통해 스키마 스티칭 아이디어를 한 단계 끌어 올립니다.
 
 #### GraphQL 바인딩을 통해 GraphQL API 재사용 및 구성-GraphQL 바인딩하면 기존 GraphQL API를 GraphQL 서버에 내장 할 수 있습니다.
-
-<br/>
 
 ## **5. 많은 오픈소스 생태계와 놀라운 커뮤니티.**
 
@@ -107,8 +94,6 @@ GraphQL 커뮤니티 역시 빠르게 성장하고 있습니다. [많은 중소 
 - [GraphQL Europe](https://www.graphql-europe.org/) (베를린)
 - [GraphQL Day](https://www.graphqlday.org/) (changing locations, first edition in Amsterdam)
 - [GraphQL Summit](https://summit.graphql.com/) (San Francisco)
-
-<br/>
 
 **오늘 바로 GraphQL 시작하기**
 

@@ -9,7 +9,7 @@ const App: React.FC = () => {
     <div>
       <Header/>
       <Main/>
-      {/* <Detail /> */}
+      {/* <Detail name={"hyunseo"} postTitle={"hyunseo_5reason-to-use-graphql"} /> */}
     </div>
   );
 };
