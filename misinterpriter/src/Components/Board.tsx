@@ -9,6 +9,9 @@ type Articleprops = {
 
 const Board: React.FC<Articleprops> = ({title, name}) => {
   const { Meta } = Card;
+  const handleClick = () => {
+    // <Detail name={"hyunseo"} postTitle={"hyunseo_5reason-to-use-graphql"} />
+  }
   return (
 
         <Card
