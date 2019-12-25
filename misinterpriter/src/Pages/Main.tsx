@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom'
 import Board from 'Components/Board'
 import articleData from '../Assets/articleData.json'
 import {Row, Col} from 'antd'
@@ -12,7 +13,10 @@ const Main: React.FC= () =>{
     for(let i= 0; i< data[1].length; i++){
       articleComponent.push(
         <Col span={6}>
-          <Board name={data[0]} title={data[1][i]}/>
+          <Link to={`/board`}>
+           <Board name={data[0]} title={data[1][i]}/>
+          </Link>
+          <div style={{"margin":"10px"}}/>
         </Col>
         )
     }
