@@ -1,24 +1,33 @@
 import React from 'react';
-import { Box, Logo, Line, Btn } from './Headerstyle'
+import { BrowserRouter as Router, Link} from 'react-router-dom'
+import { Box, Logo, Line, Btn } from './Headerstyle';
 
 const Header: React.FC = () => {
-
-
   return <Box>
           <Logo>
             Misinterpriter
             <Line/>
           </Logo>
           <div style={{"float":"right" , "padding": "3px"}}>
-            <Btn size="large">
-              main
-            </Btn>
-            <Btn size="large">
-              member
-            </Btn>
-            <Btn size="large">
-              project
-            </Btn>
+            <Router>
+              {/* <Link to="/"> */}
+              <a href="http://localhost:3000/">
+                <Btn size="large">
+                  main
+                </Btn>
+              </a>
+              {/* </Link> */}
+              <Link to="member">
+                <Btn size="large">
+                  member
+                </Btn>
+              </Link>
+              <Link to="project">
+                <Btn size="large">
+                  project
+                </Btn>
+              </Link>
+            </Router>
           </div>
         </Box>
 }
