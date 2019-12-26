@@ -1,18 +1,22 @@
 import React, { useState, useEffect } from "react";
+import { RouteComponentProps } from 'react-router-dom'
 import { StyledReactMarkdown, MainDiv, NaviBtn, BtnConatiner } from "./style";
 import FootBar from "../../Components/Footbar/Footbar";
+import { Match } from "@testing-library/dom";
 
-type DetailProps = {
-  name: string;
-  postTitle: string;
-};
+// interface match<P> {
+//   params:P;
+//   isExact: boolean;
+//   path: string;
+//   url: string;
+// };
 
-export const Detail: React.FC<DetailProps> = props => {
+export const Detail: React.FC = (props: any) => {
   const [text, setText] = useState<string>("");
   useEffect(() => {
     async function getPosts() {
       const mdFile = await fetch(
-        require(`Assets/${props.name}/${props.postTitle}.md`)
+        require(`Assets/${props.match.params.name}/${props.match.params.title}`)
       );
       const Post = await mdFile.text();
       console.log(Post);
@@ -32,15 +36,6 @@ export const Detail: React.FC<DetailProps> = props => {
         height: "100%"
       }}
     >
-      <div
-        style={{
-          height: 130,
-          backgroundColor: "rgba(0,0,0,0.9)",
-          color: "white"
-        }}
-      >
-        임시 Header
-      </div>
       <MainDiv>
         <StyledReactMarkdown source={text}></StyledReactMarkdown>
         <div
