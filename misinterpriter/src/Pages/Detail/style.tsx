@@ -42,3 +42,15 @@ export const BtnConatiner = styled.div`
   padding-top: 21%;
   border: 0.5px solid white;
 `;
+
+export const TopDiv = styled.div`
+  &:after {
+    display: block;
+    height: 2px;
+    background-color: #e67e22;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+`;
