@@ -2,17 +2,11 @@
 
 - **본기사는 [Top 5 Reasons to Use GraphQL (MARCH 25, 2018 Michał Lytek)](https://medium.com/@MichalLytek/graphql-typescript-typegraphql-ba0225cb4bed) 을 번역한 기사입니다.**
 
-<br/>
-
 출저 : https://medium.com/@MichalLytek/graphql-typescript-typegraphql-ba0225cb4bed
-
-<br/>
 
 우리는 모두 GraphQL 을 사랑합니다! 이는 REST API 가 가지고 있는 underfetching 과 overfetching 같은
 많은 문제들을 해결합니다.
 그러나 가끔 TypeScript를 사용하여 Node.js에서 GraphQL API를 개발하는 것은 약간의 고통이 따릅니다.
-
-<br/>
 
 [TypegraphQL](https://typegraphql.ml/) 은 클래스와 약간의 데코레이터를 더한 마법으로 스키마를 정의함으로써
 i.a.(정보구조설계 = information Architecture) 과정을 즐겁게 만듭니다.
@@ -30,7 +24,6 @@ i.a.(정보구조설계 = information Architecture) 과정을 즐겁게 만듭�
 모든 인수 , 입력 , 그리고 심지어 객체 유형에 대한 TS 인터페이스를 만들어야 합니다.
 
 그래야만 유효성 검사, 권한 부여 및로드 종속성과 같은 일반적인 작업을 수동으로 수행하여 resolver 를 구현할 수 있습니다.
-<br/>
 
 ```js
 export const getRecipesResolver: GraphQLFieldResolver<
@@ -51,8 +44,6 @@ export const getRecipesResolver: GraphQLFieldResolver<
 };
 ```
 
-<br/>
-
 ### **가장 큰 문제는 코드베이스의 중복성입니다.**
 
 이 경우 , 동기화를 유지하기가 어렵습니다. 원본에 새 필드를 추가하려면 모든 파일을 이동해야 하고 클래스를 수정한
@@ -63,7 +54,6 @@ export const getRecipesResolver: GraphQLFieldResolver<
 TypeGraphQL 은 TypeScript 기반으로 십여개월에 걸친 GraphQL API 개발 경험을 바탕으로이 문제를 해결합니다.
 메인 아이디어는 클래스와 약간의 데코레이터를 사용하여 스키마를 정의하여 하나의 진실 소스만을 갖는 것입니다.
 이는 의존성 주입, 검증 또는 인증과 같은 우리가 스스로 처리해야하는 일반적인 작업을 도와줍니다.
-<br/>
 
 ## **시작하기**
 
@@ -118,8 +108,6 @@ class Recipe {
 
 **nullable** 혹은 **[]** 등 을 사용하는 자세한 규칙은 [여기서](https://typegraphql.ml/docs/types-and-fields.html) 확인하실 수 있습니다.
 
-<br/>
-
 ## **Resolvers**
 
 이제 우리는 전형적인 queries 와 mutation 을 만들고 싶습니다.
@@ -170,8 +158,6 @@ class RecipeResolver {
 사용 합니다. `returns => Recipe` 함수와 다른 것들을 선언하는 시기와 이유에 대한 자세한 규칙은
 [resolvers docs](https://typegraphql.ml/docs/resolvers.html) 에 설명되어 있습니다.
 
-<br/>
-
 ## **입력과 인수**
 
 좋습니다! 하지만 `NewRecipeInput` 과 `RecipesArgs` 는 무엇일까요?
@@ -207,8 +193,6 @@ class RecipesArgs {
 
 `@Length`, `@Min` 또는 `@MaxArraySize` 는 `class-validator` 에서 데코레이터로 가져오고
 자동으로 TypeGraphQL 에 필드 유효성 검사를 수행합니다.
-
-<br/>
 
 ### **스키마 작성하기**
 
@@ -250,8 +234,6 @@ type Mutation {
 }
 ```
 
-<br/>
-
 ### **더 원한다면 ?**
 
 이는 빙산의 일각인 아주 기본적인 graphQL 타입에 예시입니다.
@@ -263,8 +245,6 @@ TypeGraphQL 은 이 역시 완벽하게 지원합니다!
 
 권한 부여 , 상속 지원 , 필드 resolver 혹은 middle 와 같은 고급 개념을 배우고 싶다면
 이 [예제 섹션](https://typegraphql.ml/docs/introduction.html) 에서 확인하실 수 있습니다.
-
-<br/>
 
 ### **v1.0을 향해**
 
