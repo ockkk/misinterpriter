@@ -11,6 +11,19 @@ const filePath = "./Assets/interpreters.json";
     parsedData.interpreters.forEach(name => {
       fs.readdir(`./Assets/${name}`, (err, files) => {
         if (err) throw err;
+
+        files = files.map(filename => {
+          const result = [];
+          const splitedFileName = filename.split("_");
+
+          splitedFileName[2] = splitedFileName[2].replace(".md", "");
+
+          splitedFileName.forEach(el => result.push(el));
+          result.push(filename);
+
+          return result;
+        });
+
         articleInfo[name] = files;
 
         fs.writeFile(
