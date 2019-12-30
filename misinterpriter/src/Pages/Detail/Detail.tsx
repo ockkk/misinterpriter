@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { RouteComponentProps } from 'react-router-dom'
-import { StyledReactMarkdown, MainDiv, NaviBtn, BtnConatiner } from "./style";
+import { StyledReactMarkdown, MainDiv } from "./style";
 import FootBar from "../../Components/Footbar/Footbar";
-import { Match } from "@testing-library/dom";
+import { RemoteBtn } from "./RemoteBtn";
+import Discussion from "Components/Discussion";
 
 // interface match<P> {
 //   params:P;
@@ -25,10 +25,6 @@ export const Detail: React.FC = (props: any) => {
     getPosts();
   }, [props.name, props.postTitle]);
 
-  const scrollBtn = (position: number) => {
-    window.scrollTo(0, position);
-  };
-
   return (
     <div
       style={{
@@ -38,33 +34,25 @@ export const Detail: React.FC = (props: any) => {
     >
       <MainDiv>
         <StyledReactMarkdown source={text}></StyledReactMarkdown>
-        <div
-          style={{
-            position: "fixed",
-            right: "6.5%",
-            bottom: "45%"
-          }}
-        >
-          <BtnConatiner>
-            <div>
-              <NaviBtn
-                onClick={() => {
-                  scrollBtn(0);
-                }}
-              >
-                Top
-              </NaviBtn>
-            </div>
-            <NaviBtn
-              onClick={() => {
-                scrollBtn(30000);
-              }}
-            >
-              Bot
-            </NaviBtn>
-          </BtnConatiner>
-        </div>
+        <RemoteBtn />
       </MainDiv>
+      <div
+        style={{
+          width: "70%",
+          marginLeft: "15%",
+          marginRight: "15%",
+          marginTop: "5%"
+        }}
+      >
+        <Discussion
+          disqusShortname="misinterpreters"
+          disqusConfig={{
+            url: `http://localhost:3000/${props.postTitle}`,
+            identifier: `http://localhost:3000/${props.postTitle}`,
+            title: `${props.postTitle}`
+          }}
+        />
+      </div>
       <FootBar />
     </div>
   );
