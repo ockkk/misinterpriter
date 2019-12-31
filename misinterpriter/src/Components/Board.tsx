@@ -5,7 +5,7 @@ import { Detail } from '../Pages/Detail/Detail'
 
 type Articleprops = {
   data: string;
-}
+};
 
 const Board: React.FC<Articleprops> = ({data}) => {
   const name = data.split("_")[0]
