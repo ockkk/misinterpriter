@@ -1,16 +1,12 @@
 # 2020년 웹 디자인 트렌드 Top 10
 
-<img src ="https://static.wixstatic.com/media/72c0b2_b309efbc0d03462a985e8f1aaa1995af~mv2.png/v1/fill/w_1064,h_608,al_c,q_90/72c0b2_b309efbc0d03462a985e8f1aaa1995af~mv2.webp">
+![]("https://static.wixstatic.com/media/72c0b2_b309efbc0d03462a985e8f1aaa1995af~mv2.png/v1/fill/w_1064,h_608,al_c,q_90/72c0b2_b309efbc0d03462a985e8f1aaa1995af~mv2.webp")
 
 푸시 알림과 끝없는 열린 탭이 우리의 관심을 끌기 위해 경쟁하고 있는 시점에, 올해 웹 디자인이 직관적이고 사용의 명확성이라는 것이라는 것은 그리 놀랍지 않다. 정보와 자극이 가득한 환경에서 오늘날의 웹 사이트는 눈에 띄게 메시지를 보다 명확하게 전달해야 한다.
 
 <br>
 
-
-
 2020 년을위한 다음과 같은 웹 디자인 트렌드는 명확하고 깔끔한 웹 사이트를 유지하면서 콘텐츠와 비주얼이 여전히 풍부하다. 무엇보다도 이러한 놀라운 트렌드를 통해 스타일과 최신 상태의 완벽한 웹 사이트를 만들 수 있다.
-
-
 
 ##**2020 디자인 트렌드 웹 Top 10**
 
@@ -34,8 +30,6 @@
 
 10. 맞춤형 삽화
 
-
-
 <br>
 
 ## 01. 대형 타입과 요소
@@ -50,7 +44,7 @@
 
 이러한 추세의 일부로, 점점 더 많은 웹 사이트가 큰 타이포그래피와 함께 첫 화면에서 전체 화면 이미지 또는 비디오를 선택한다. 이 레이아웃은 메시지를 명확하고 효율적으로 전달하여 가장 중요한 정보가 제공 될뿐만 아니라 사이트 방문자에게 진정으로 등록하고 공감할 수 있도록 한다.
 
-<img src= "https://static.wixstatic.com/media/72c0b2_a4dca20a8e2a4ff7a21b8f51b38820c8~mv2.gif">
+![]("https://static.wixstatic.com/media/72c0b2_a4dca20a8e2a4ff7a21b8f51b38820c8~mv2.gif")
 
 <br>
 
@@ -66,7 +60,7 @@
 
 이 분할 된 디자인에 시각적 계층 구조를 주입하려면 두 개의 반쪽이 만나는 화면 중앙에 추가 요소를 배치하면 된다. 로고에서 클릭 유도 문안 (CTA) 버튼 또는 메뉴 헤더에 이르기까지 이러한 요소는 초점 역할을 하며 화면 균형을 유지한다.
 
-<img src= "https://static.wixstatic.com/media/72c0b2_2046155795134f6983206793284550b2~mv2.jpg/v1/fill/w_940,h_540,al_c,q_90/72c0b2_2046155795134f6983206793284550b2~mv2.webp">
+![]("https://static.wixstatic.com/media/72c0b2_2046155795134f6983206793284550b2~mv2.jpg/v1/fill/w_940,h_540,al_c,q_90/72c0b2_2046155795134f6983206793284550b2~mv2.webp")
 
 ## 03. 단색 블록
 
@@ -80,7 +74,7 @@
 
 이 트렌드는 시각적으로 눈에 띄는 레이아웃으로 항목 모음을 표시하는 것이지만 최종 결과는 우연한 콜라주 작업과 거리를 두어야 한다. 컬러 블록은 일관성 있는 구성을 형성하기 위해 함께 제공되어 디자인을 직관적이고 이해하기 쉽게 만든다. 색상 블록이 서로 깔끔하게 정렬되어 있는지 (그리드가 유용할 수 있음) 서로 다른 모든 시각적 요소가 서로 보완되는지 확인해라.
 
-<img src= "https://static.wixstatic.com/media/72c0b2_6f2ba92ef9744639b3e3aa4393ed0a6a~mv2.jpg/v1/fill/w_940,h_540,al_c,q_90/72c0b2_6f2ba92ef9744639b3e3aa4393ed0a6a~mv2.webp">
+![]("https://static.wixstatic.com/media/72c0b2_6f2ba92ef9744639b3e3aa4393ed0a6a~mv2.jpg/v1/fill/w_940,h_540,al_c,q_90/72c0b2_6f2ba92ef9744639b3e3aa4393ed0a6a~mv2.webp")
 
 ## 04. 많은 여백
 
@@ -94,7 +88,7 @@
 
 공백은 항상 중요한 디자인 원칙이었지만 2020 년에는 인접한 이미지 및 유형과 함께 공백이 점점 더 커질 것이다. 깨끗하고 전문적으로 쓰인 타이포그래피로 조화로운 디자인, 그리고 우주에서 자유롭게 떠다니는 듯한 이미지를 볼 수 있다. 다음을 보면 아주 깔끔 하지만 비주얼은 크고, 대담하며, 화려하기 때문에 미니멀리즘과는 거리가 멀다.
 
-<img src="https://static.wixstatic.com/media/72c0b2_d4fa7af3d0744a548955914a29018cc6~mv2.gif">
+![]("https://static.wixstatic.com/media/72c0b2_d4fa7af3d0744a548955914a29018cc6~mv2.gif")
 
 ## 05. 그리드와 창 노출
 
@@ -108,7 +102,7 @@
 
 팝업 또는 브라우저 창을 연상시키는 모양은 이제 페이지 자체의 완벽한 부분이다. 이 모양은 뉘앙스가 생기고 친숙한 형태를 부드럽게 암시하거나 컴퓨터의 초기 시절을 재치 있게 참조하는 디자인으로 더 명확하게 표현할 수 있다.
 
-<img src="https://static.wixstatic.com/media/72c0b2_d5580f336b55424280637e895d7bce73~mv2.jpg/v1/fill/w_940,h_540,al_c,q_90/72c0b2_d5580f336b55424280637e895d7bce73~mv2.webp">
+![]("https://static.wixstatic.com/media/72c0b2_d5580f336b55424280637e895d7bce73~mv2.jpg/v1/fill/w_940,h_540,al_c,q_90/72c0b2_d5580f336b55424280637e895d7bce73~mv2.webp")
 
 # 06. 형광 3D 디지털 아트웍
 
@@ -122,7 +116,7 @@
 
 이 웹 디자인 트렌드는 적당히 사용해야 한다. 색상 표에서 보색 또는 보조 색상으로 웹 페이지 주위에 형광 색상을 분산 시키고 균형을 잡으려면 흰색, 검은 색 및 회색과 같은 기본 색상으로 중성 음영을 사용해야한다.
 
-<img src="https://static.wixstatic.com/media/72c0b2_4eb5fbb5467040819c6f725726cd0bf0~mv2.gif">
+![]("https://static.wixstatic.com/media/72c0b2_4eb5fbb5467040819c6f725726cd0bf0~mv2.gif")
 
 ## 07. 겹치는 레이어
 
@@ -136,7 +130,7 @@
 
 이 모양은 라이트 박스, 시차 스크롤 효과를 사용하거나 이미지 나 텍스트를 서로 위에 배치하여 만들 수 있다.
 
-<img src="https://static.wixstatic.com/media/72c0b2_68f1740ac5704a57894f602923c4f52c~mv2.gif">
+![]("https://static.wixstatic.com/media/72c0b2_68f1740ac5704a57894f602923c4f52c~mv2.gif")
 
 ## 08. 모션 및 상호 작용
 
@@ -150,7 +144,7 @@
 
 이러한 트렌드를 효과적으로 활용하려면 사이트에 어떤 영역을 가장 집중하고 싶은지 생각해보라. 잘못 사용하면 모션이 산만해질 수 있으므로 사이트의 스토리 텔링을 지원하는 전략적인 장소에만 적용해야 한다.
 
-<img src="https://static.wixstatic.com/media/72c0b2_52c8dae47406405eb0930a45916af8a1~mv2.gif">
+![]("https://static.wixstatic.com/media/72c0b2_52c8dae47406405eb0930a45916af8a1~mv2.gif")
 
 ## 09. 전체 화면 양식
 
@@ -166,7 +160,7 @@
 
 사용자가 양식을 작성하여 제출할 가능성을 높일 수 있는 또 다른 기능은 사용자의 작업에 실시간으로 응답하여 프로세스를 안내하는 소규모 상호 작용이다. 예를 들어, 미묘한 디자인 변경은 특정 필드가 채워졌음을 알리고 피드백 메시지는 성공적인 양식 제출을 표시할 수 있다.
 
-<img src="https://static.wixstatic.com/media/72c0b2_d2852c5f9c85479fbf8dbb81bf6b94d7~mv2.jpg/v1/fill/w_940,h_550,al_c,q_90/72c0b2_d2852c5f9c85479fbf8dbb81bf6b94d7~mv2.webp">
+![]("https://static.wixstatic.com/media/72c0b2_d2852c5f9c85479fbf8dbb81bf6b94d7~mv2.jpg/v1/fill/w_940,h_550,al_c,q_90/72c0b2_d2852c5f9c85479fbf8dbb81bf6b94d7~mv2.webp")
 
 ## 10. 맞춤형 삽화
 
@@ -180,10 +174,10 @@
 
 브랜드 비전을 캡슐화하는 일관된 시각적 언어를 형성하려면 독특한 일러스트레이션, 아이콘 및 배지가 포함된 벡터 아트 컬렉션을 찾아보아라. 또한 고품질 미디어 기능을 통해 시간을 투자하여 브랜드 별 요구에 완벽하게 맞는 이미지를 찾아라.
 
-<img src="https://static.wixstatic.com/media/72c0b2_746273af61604f2e8a73e9dd2f7f8c55~mv2.gif">
-
+![]("https://static.wixstatic.com/media/72c0b2_746273af61604f2e8a73e9dd2f7f8c55~mv2.gif")
 
 <br>
 
 ### **이글은 wix blog의 Top 10 Web Design Trends for 2020의 글을 번역한 글입니다.**
+
 출처: <https://www.wix.com/blog/2019/11/web-design-trends-2020/>
