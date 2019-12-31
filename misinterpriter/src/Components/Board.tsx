@@ -4,12 +4,14 @@ import { Image, Image2, Title, Name } from './Boardstyle'
 import { Detail } from '../Pages/Detail/Detail'
 
 type Articleprops = {
-  data: string;
+  data: object;
 };
 
-const Board: React.FC<Articleprops> = ({data}) => {
-  const name = data.split("_")[0]
-  const title = data.split("_")[1].replace(/-/gi," ")
+const Board: React.FC<Articleprops> = ({data}:any) => {
+
+  const name = data["author"]
+  const title = data["title"]
+  const image = data["image"]
 
   const handleClick = () => {
     return <Detail/>
@@ -17,7 +19,7 @@ const Board: React.FC<Articleprops> = ({data}) => {
 
   return (
     <div onClick={()=> handleClick()}>
-      <Image2 src="https://static.wixstatic.com/media/72c0b2_a4dca20a8e2a4ff7a21b8f51b38820c8~mv2.gif"></Image2>
+      <Image2 src={image}></Image2>
       <Title>{title}</Title>
       <Name>{name}</Name>
     </div>

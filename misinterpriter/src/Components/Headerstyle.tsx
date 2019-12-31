@@ -9,10 +9,8 @@ export const TitleText = sc.div`
 `;
 
 export const Box = sc.div`
-  border: solid 2px #d9d9d9;
   height: 70px;
   padding: 15px;
-  border-radius: 5px;
 `
 export const Logo = sc.div`
   height: 60px;

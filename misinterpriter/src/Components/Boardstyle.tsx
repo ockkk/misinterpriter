@@ -6,14 +6,14 @@ export const Image = sc.img`
 `
 
 export const Image2 = sc.img`
-  border-radius: 0px 0px 3px 3px;
+  border-radius: 4px 4px 0px 0px;
   width: 95%;
   height: 250px;
 `
 
 export const Title = sc.div`
-  border-bottom: solid 1px silver;
-  background-color: #9e9e9e08;
+  border-bottom: solid 1px #f4f7f6;
+  background-color: white;
   width: 95%;
   height: 100px;
   padding: 10px;
@@ -21,11 +21,11 @@ export const Title = sc.div`
 `
 
 export const Name = sc.div`
-  border-radius: 0px 0px 3px 3px;
-  background-color: #9e9e9e08;
+  border-radius: 0px 0px 4px 4px;
+  background-color: white;
   width: 95%;
-  height: 30px;
-  padding: 3px;
+  height: 40px;
+  padding: 8px;
   padding-left: 10px;
   color: black;
 `
