@@ -10,15 +10,15 @@ export const TitleText = sc.div`
 
 export const Box = sc.div`
   border: solid 2px #d9d9d9;
-  height: 90px;
+  height: 70px;
   padding: 15px;
   border-radius: 5px;
 `
 export const Logo = sc.div`
-  height: 80px;
+  height: 60px;
   position: relative;
   float: left;
-  bottom: 20px;
+  bottom: 25px;
   margin-bottom: ;
   font-size: 50px;
 `
@@ -33,6 +33,5 @@ export const Line = sc.hr`
 export const Btn = sc(Button)`
   margin-right: 10px;
   width: 100px;
-  height: 50px;
   font-weight: bold;
 `
