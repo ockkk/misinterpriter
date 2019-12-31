@@ -25,7 +25,7 @@ PWAs는 브라우저를 통해 휴대전화에 설치할 수 있는 모바일에
 
 
 
-<img src="https://www.outsystems.com/blog/-/media/images/blog/posts/progressive-web-apps-pwa/progressive-web-apps-pwa-01.png?h=611&w=750&la=en">
+![]("https://www.outsystems.com/blog/-/media/images/blog/posts/progressive-web-apps-pwa/progressive-web-apps-pwa-01.png?h=611&w=750&la=en")
 
 
 
@@ -62,7 +62,7 @@ PWA를 사용하면 응용 프로그램이 열려있지 않은 경우에도 푸�
 
 ## 프로그레시브 웹 앱은 무엇을 할 수 있을까?
 우리는 이제 회의론과 초기 시절에 지배되었던 애플과 같은 브라우저 옹호자들의 저항을 견뎌낸 후 PWA의 대량 채택을 목격하고 있다. PWA는 무시하기 어려워졌고 일부 시장의 리더는 이미 조치를 취했다. 왜 그럴까?? 이미 언급된 이점 이외에도, 비즈니스 특전의 목록을 보여 줄 것이다.
-<img src="https://www.outsystems.com/blog/-/media/images/blog/posts/progressive-web-apps-pwa/progressive-web-apps-pwa-02.png?h=404&w=751&la=en">
+![]("https://www.outsystems.com/blog/-/media/images/blog/posts/progressive-web-apps-pwa/progressive-web-apps-pwa-02.png?h=404&w=751&la=en")
 
 * **개발, 유지 비용의 절감**: 단일 코드베이스에서 지원되는 여러 플랫폼이 있다. 
 
@@ -129,7 +129,7 @@ PWA 성공 사례는 회사가 사용자와 고객의 여정을 매핑하고 고
 
 **모바일 개발네서는 옳고 그름은 없고 단지 당신의 고객에게 가장 적합한 한가지 경로가 있다.**
 
-<img src="https://www.outsystems.com/blog/-/media/images/blog/posts/progressive-web-apps-pwa/progressive-web-apps-pwa-03.png?h=464&w=751&la=en">
+![]("https://www.outsystems.com/blog/-/media/images/blog/posts/progressive-web-apps-pwa/progressive-web-apps-pwa-03.png?h=464&w=751&la=en")
 
 <br>
 
