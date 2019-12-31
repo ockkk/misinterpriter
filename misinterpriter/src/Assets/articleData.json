@@ -1,4 +1,122 @@
 {
+  "jongock": [
+    {
+      "author": "jongock",
+      "title": "더 좋은 이름을 짓는 20가지 방법",
+      "image": null,
+      "filepath": "jongock_20-Tips-For-Better-Naming.md",
+      "category": "jongock"
+    },
+    {
+      "author": "jongock",
+      "title": "스타일드 컴포넌트를 사용하여 반응형 UI를 만드는 방법",
+      "image": "https://miro.medium.com/max/1736/1*6Pld5ZuXMOylEXP_1bSPjA.png",
+      "filepath": "jongock_How-to-create-responsive-UI-with-styled-components.md",
+      "category": "jongock"
+    },
+    {
+      "author": "jongock",
+      "title": "2020년 웹 디자인 트렌드 Top 10",
+      "image": "\"https://static.wixstatic.com/media/72c0b2_b309efbc0d03462a985e8f1aaa1995af~mv2.png/v1/fill/w_1064,h_608,al_c,q_90/72c0b2_b309efbc0d03462a985e8f1aaa1995af~mv2.webp\"",
+      "filepath": "jongock_Top-10-Web-Design-Trends.md",
+      "category": "jongock"
+    },
+    {
+      "author": "jongock",
+      "title": "PWAs(Progressive Web Apps)란 무엇인가?",
+      "image": "\"https://www.outsystems.com/blog/-/media/images/blog/posts/progressive-web-apps-pwa/progressive-web-apps-pwa-01.png?h=611&w=750&la=en\"",
+      "filepath": "jongock_What-are-PWAs?.md",
+      "category": "jongock"
+    },
+    {
+      "author": "jongock",
+      "title": "테스트 주도 개발 - 테스트 주도 개발은 무엇이며 그것을 왜 사용해야 하는가? ",
+      "image": "https://images.xenonstack.com/blog/test-driven-development-process-cycle.png",
+      "filepath": "jongock_Why-TDD.md",
+      "category": "jongock"
+    }
+  ],
+  "minhee": [
+    {
+      "author": "minhee",
+      "title": "##리액트 개발자들이 하는 10가지 실수들",
+      "image": "https://blog.logrocket.com/wp-content/uploads/2019/09/React-dashboard-nocdn.png",
+      "filepath": "minhee_10-mistakes-React-developers-make.md",
+      "category": "minhee"
+    },
+    {
+      "author": "minhee",
+      "title": "#KeyboardAvoidingView가 잘 동작하지 않나요? Flexbox 레이아웃을 확인해 보세요.md",
+      "image": "https://miro.medium.com/max/2400/1*y6C4nSvy2Woe0m7bWEn4BA.png",
+      "filepath": "minhee_KeyboardAvoidingView-not-working-properly-Check-your-Flexbox-Layout-first.md",
+      "category": "minhee"
+    },
+    {
+      "author": "minhee",
+      "title": "##자바스크립트의 프로토타입",
+      "image": "https://miro.medium.com/max/1676/1*3ftgUPoTz5nSmGPwTjf7VA.png",
+      "filepath": "minhee_Prototypes-in-JavaScript.md",
+      "category": "minhee"
+    },
+    {
+      "author": "minhee",
+      "title": "#JWT와 리액트 라우터를 사용하여 리액트 앱을 보호하는 간단한 방법",
+      "image": null,
+      "filepath": "minhee_Simple-way-to-Secure-React-apps-using-JWT-and-React-Router.md",
+      "category": "minhee"
+    },
+    {
+      "author": "minhee",
+      "title": "#반복문에서 i++는 이제 그만",
+      "image": null,
+      "filepath": "minhee_Stop-using-i++-in-your-loops.md",
+      "category": "minhee"
+    },
+    {
+      "author": "minhee",
+      "title": "#잼 스택이 각광받는 이유는?",
+      "image": "https://miro.medium.com/max/4374/1*0m8h_Osu4n6iA1ehS6SCgg.png",
+      "filepath": "minhee_Why-JAMstack-is-Becoming-so-Popular.md",
+      "category": "minhee"
+    }
+  ],
+  "hyunseo": [
+    {
+      "author": "hyunseo",
+      "title": "우리가 GraphQL 을 사용해야 하는 5가지 이유.",
+      "image": "https://d33wubrfki0l68.cloudfront.net/c0fb631da36f84e02a5088411fcb527894b7fe52/adf58/blog/posts/top-5-reasons-to-use-graphql.png",
+      "filepath": "hyunseo_5reason-to-use-graphql.md",
+      "category": "hyunseo"
+    },
+    {
+      "author": "hyunseo",
+      "title": "리액트 Hooks : useEffect() 사용법",
+      "image": "https://miro.medium.com/max/2482/1*Uk7jZQIN2DA0kQ3AH8bIhw.png",
+      "filepath": "hyunseo_How-to-use-useEffect().md",
+      "category": "hyunseo"
+    },
+    {
+      "author": "hyunseo",
+      "title": "GraphQL + TypeSCript = TypeGraphQL",
+      "image": "https://images.velog.io/post-images/augusty/ba039b40-e43c-11e9-a973-7f9bb13a5b0d/logo.png",
+      "filepath": "hyunseo_typegraphql.md",
+      "category": "hyunseo"
+    },
+    {
+      "author": "hyunseo",
+      "title": "React hooks 를 사용해야하는 이유.",
+      "image": null,
+      "filepath": "hyunseo_why-we-use-react-hooks.md",
+      "category": "hyunseo"
+    },
+    {
+      "author": "hyunseo",
+      "title": "styled-components 를 사용해야하는 8가지 이유",
+      "image": "https://i1.wp.com/storage.googleapis.com/blog-images-backup/1*0wLQ0p3qBo1bBt5km_nUXQ.png?zoom=2&resize=324%2C316&ssl=1",
+      "filepath": "hyunseo_why-we-use-styled-components.md",
+      "category": "hyunseo"
+    }
+  ],
   "ujeon": [
     {
       "author": "ujeon",
@@ -17,6 +135,7 @@
     {
       "author": "ujeon",
       "title": "리액트에서 환경변수 사용하기",
+      "image": null,
       "filepath": "react_Using-enviroment-variables-in-React.md",
       "category": "react"
     },

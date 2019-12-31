@@ -19,13 +19,12 @@ const filePath = "./Assets/interpreters.json";
                 data
               ) {
                 try {
-                  const result = {};
-
                   if (err) throw err;
-
+                  const result = {};
                   const content = data.split("\n");
                   let title = content[0].replace("# ", "");
                   let image;
+
                   for (let i = 0; i < content.length; i++) {
                     if (content[i].includes("jpg")) {
                       image = content[i].split("(")[1].split(")")[0];
@@ -36,18 +35,21 @@ const filePath = "./Assets/interpreters.json";
                       break;
                     }
                   }
+
                   result.author = name;
                   result.title = title;
-                  result.image = image;
+                  result.image = !image ? null : image;
                   result.filepath = filename;
                   result.category = filename.split("_")[0];
 
                   res(result);
-                } catch {
-                  rej(new Error());
+                } catch (err) {
+                  rej(err);
                 }
               });
-            }).then(res => res);
+            })
+              .then(res => res)
+              .catch(err => console.log(err));
           })
         ).then(res => res);
 
