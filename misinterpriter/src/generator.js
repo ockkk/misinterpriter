@@ -7,22 +7,49 @@ const filePath = "./Assets/interpreters.json";
     const articleInfo = {};
     if (err) throw err;
     const parsedData = JSON.parse(data.toString());
-
     parsedData.interpreters.forEach(name => {
-      fs.readdir(`./Assets/${name}`, (err, files) => {
+      fs.readdir(`./Assets/${name}`, async (err, files) => {
         if (err) throw err;
 
-        files = files.map(filename => {
-          const result = [];
-          const splitedFileName = filename.split("_");
+        files = await Promise.all(
+          files.map(filename => {
+            return new Promise((res, rej) => {
+              fs.readFile(`./Assets/${name}/${filename}`, "utf8", function(
+                err,
+                data
+              ) {
+                try {
+                  const result = {};
 
-          splitedFileName[2] = splitedFileName[2].replace(".md", "");
+                  if (err) throw err;
 
-          splitedFileName.forEach(el => result.push(el));
-          result.push(filename);
+                  const content = data.split("\n");
+                  let title = content[0].replace("# ", "");
+                  let image;
+                  for (let i = 0; i < content.length; i++) {
+                    if (content[i].includes("jpg")) {
+                      image = content[i].split("(")[1].split(")")[0];
+                      break;
+                    }
+                    if (content[i].includes("png")) {
+                      image = content[i].split("(")[1].split(")")[0];
+                      break;
+                    }
+                  }
+                  result.author = name;
+                  result.title = title;
+                  result.image = image;
+                  result.filepath = filename;
+                  result.category = filename.split("_")[0];
 
-          return result;
-        });
+                  res(result);
+                } catch {
+                  rej(new Error());
+                }
+              });
+            }).then(res => res);
+          })
+        ).then(res => res);
 
         articleInfo[name] = files;
 
