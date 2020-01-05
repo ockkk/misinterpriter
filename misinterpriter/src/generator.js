@@ -26,11 +26,11 @@ const filePath = "./Assets/interpreters.json";
                   let image;
 
                   for (let i = 0; i < content.length; i++) {
-                    if (content[i].includes("jpg")) {
-                      image = content[i].split("(")[1].split(")")[0];
-                      break;
-                    }
-                    if (content[i].includes("png")) {
+                    if (content[i].includes("jpg") || 
+                        content[i].includes("png") || 
+                        content[i].includes("jpeg") || 
+                        content[i].includes(".gif") || 
+                        content[i].includes("img")) {
                       image = content[i].split("(")[1].split(")")[0];
                       break;
                     }
