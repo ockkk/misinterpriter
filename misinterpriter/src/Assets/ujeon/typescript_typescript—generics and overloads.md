@@ -1,6 +1,6 @@
+# 타입스크립트 제네릭과 오버로드
 
-
-*본 기사는 [Charly Poly](https://medium.com/@wittydeveloper?source=post_page-----999679d121cf----------------------)의 [Typescript — Generics and overloads](https://medium.com/@wittydeveloper/typescript-generics-and-overloads-999679d121cf)을 번역한 기사입니다.*
+_본 기사는 [Charly Poly](https://medium.com/@wittydeveloper?source=post_page-----999679d121cf----------------------)의 [Typescript — Generics and overloads](https://medium.com/@wittydeveloper/typescript-generics-and-overloads-999679d121cf)을 번역한 기사입니다._
 
 ![](https://miro.medium.com/max/2000/0*9vLufA771W-hnhJh.)
 
@@ -20,23 +20,21 @@
 
 > `interface` 와 같은 기본 타입은 데이터 및 기본 함수 기능 서명을 설정하는데 유용하지만, 제네릭은 타입을 "열리고" 재사용할 수 있도록 도와줍니다.
 
-
-
 ### 제네릭 타입을 사용하는 이유는 무엇인가요?
 
 다음 헬퍼 함수를 어플리케이션에 노출시키고 싶다고 상상해보세요:
 
 ```typescript
-function withUID (obj) { 
-   return Object.assign({}, obj, { uuid: _.uniqueId() });
+function withUID(obj) {
+  return Object.assign({}, obj, { uuid: _.uniqueId() });
 }
 ```
 
 이 함수에 조금 더 직관적으로 "타입"을 지정하는 방법은:
 
 ```typescript
-function withUID (obj: any) { 
-   return Object.assign({}, obj, { uuid: _.uniqueId() });
+function withUID(obj: any) {
+  return Object.assign({}, obj, { uuid: _.uniqueId() });
 }
 ```
 
@@ -54,17 +52,17 @@ function withUID (obj: any) {
 
 ### 제네릭 타입 사용하기
 
->C# 과 Java 같은 언어에서, 재사용 가능한 컴포넌트를 생성하기 위한 도구 상자의 주요 도구 중 하나는 제네릭입니다. 즉, 제네릭으로 한 가지의 타입이 아니라 다양한 타입과 동작가능한 컴포넌트를 생성할 수 있습니다.
+> C# 과 Java 같은 언어에서, 재사용 가능한 컴포넌트를 생성하기 위한 도구 상자의 주요 도구 중 하나는 제네릭입니다. 즉, 제네릭으로 한 가지의 타입이 아니라 다양한 타입과 동작가능한 컴포넌트를 생성할 수 있습니다.
 
-*[*https://www.typescriptlang.org/docs/handbook/generics.html*](https://www.typescriptlang.org/docs/handbook/generics.html)*
+_[_https://www.typescriptlang.org/docs/handbook/generics.html*](https://www.typescriptlang.org/docs/handbook/generics.html)\*
 
 타입스크립트 문서에서 발췌한 부분처럼, 타입을 잃지않고 여러 가지 타입을 허용하는 함수를 만들고 싶은 경우가 있습니다. — `any` 타입을 사용하지 않고 말이죠.
 
 제네릭을 사용한 `withID` 를 살펴보겠습니다.
 
 ```typescript
-function withUID<T>(obj: T) { 
-   return Object.assign({}, obj, { uuid: _.uniqueId() });
+function withUID<T>(obj: T) {
+  return Object.assign({}, obj, { uuid: _.uniqueId() });
 }
 ```
 
@@ -76,9 +74,9 @@ function withUID<T>(obj: T) {
 
 ```typescript
 interface A<T, S> {
-   a: T;
-   b: S;
-   c: { id: string } & S;
+  a: T;
+  b: S;
+  c: { id: string } & S;
 }
 ```
 
@@ -89,8 +87,6 @@ interface A<T, S> {
 타입 인수가 명시적으로 전달되지 않으면, 타입스크립트는 함수 인수에 전달 된 값으로 유추하려고 시도합니다.
 
 예를 들어, `withUID` 에서, `T` 는 `obj` 인자의 타입에서 유추됩니다.
-
-
 
 ### 제네릭은 "extends" 할 수 있습니다.
 
@@ -103,26 +99,26 @@ withUID("hello"); // is NOT valid
 
 여기서 `T` 는 "객체 타입"이라는 조건을 충족해야 합니다.
 
-``` typescript
-interface Person { name: string; }
-function withUID<T extends Person>(obj: T) { 
-   return Object.assign({}, obj, { uuid: _.uniqueId() });
+```typescript
+interface Person {
+  name: string;
+}
+function withUID<T extends Person>(obj: T) {
+  return Object.assign({}, obj, { uuid: _.uniqueId() });
 }
 withUID({ name: "POLY", surname: "Chack" }); // is valid
 ```
-
-
 
 ### 제네릭은 "디폴트 타입 값"을 가질 수 있습니다.
 
 마지막으로 인자 타입들은 "default"나 "computed value"를 가질 수 있습니다.
 
 ```typescript
-interface A<T=string> {
+interface A<T = string> {
   name: T;
 }
-const a:A = { name: "Charly" };
-const a:A<number> = { name: 101 };
+const a: A = { name: "Charly" };
+const a: A<number> = { name: 101 };
 ```
 
 이는 함수 제네릭과 달리 타입 인수를 생략할 수 없는 인터페이스에 특히 중요합니다. 예를 들어:
@@ -133,17 +129,13 @@ const a:A<number> = { name: 101 };
 
 ![](https://miro.medium.com/max/1188/1*WXnbQAOss1pJjVpPb1Dyug.png)
 
-
-
 **팁 — 기본 타입 인자는 다른 타입 인자를 재사용 할 수 있습니다.**
 
 아래 예시는 타입 인자를 다른 타입 위에 정의할 수 있는 방법을 설명합니다:
 
 ```typescript
-function MyFunction<T extends Person, S=T&{ ssid: string }>(
-   person: S
-): S {
-   /* ... */
+function MyFunction<T extends Person, S = T & { ssid: string }>(person: S): S {
+  /* ... */
 }
 ```
 
@@ -161,14 +153,14 @@ function MyFunction<T extends Person, S=T&{ ssid: string }>(
 
 ```typescript
 function getArray(...args) {
-   if (args.length === 1 && typeof args[0] === 'number') {
-      return new Array(args[0])
-   } else if (args.length > 1) {
-      return Array.from(args);
-   }
+  if (args.length === 1 && typeof args[0] === "number") {
+    return new Array(args[0]);
+  } else if (args.length > 1) {
+    return Array.from(args);
+  }
 }
-getArray(5) // => [undefined x 5]
-getArray('a', 'b', 'c') // => ['a', 'b', 'c']
+getArray(5); // => [undefined x 5]
+getArray("a", "b", "c"); // => ['a', 'b', 'c']
 ```
 
 유추된 결과 타입은 다음과 같습니다:
@@ -177,15 +169,13 @@ getArray('a', 'b', 'c') // => ['a', 'b', 'c']
 
 해결 방법은 "오버로드"를 사용하는 것 입니다.
 
->정답은 오버로드 목록으로써 동일한 함수에 대해 여러 함수 타입을 제공하는 것입니다. 이 목록은 컴파일러가 함수 호출을 해결(resolve)하는 데 사용하는 것입니다.
+> 정답은 오버로드 목록으로써 동일한 함수에 대해 여러 함수 타입을 제공하는 것입니다. 이 목록은 컴파일러가 함수 호출을 해결(resolve)하는 데 사용하는 것입니다.
 
 https://www.typescriptlang.org/docs/handbook/functions.html
 
 ![](https://miro.medium.com/max/2000/1*fayRzWScAmF0nFgu3QP1Kg.png)
 
 오버로드는 주어진 함수에 대해 가능한 모든 입력/출력 타입을 나열하는 사실입니다.
-
-
 
 ℹ️ 다음을 기억하세요:
 
@@ -217,16 +207,16 @@ P는 Props 타입의 약자이고, S는 State 타입의 약자입니다.
 따라서 타입스크립트와 리액트를 함께 사용하는 경우 Props 및 State에 타입 인자를 제공해야 합니다!
 
 ```typescript
-interface Props { user: User }
+interface Props {
+  user: User;
+}
 interface State {}
 class MyComponent extends React.Component<Props, State> {
-   state: State = {}; // important!
-   
-   // ...
+  state: State = {}; // important!
+
+  // ...
 }
 ```
-
-
 
 **오버로드 예시: `lodash _.filter()`**
 
