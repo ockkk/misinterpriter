@@ -11,70 +11,28 @@ import {
   DescText
 } from "./AboutUsStyle";
 
+import interpreters from "../../Assets/interpreters.json";
+
 const AboutUs: React.FC = () => {
-  return (
-    <Grid>
-      <GridItem>
+  const interpreterInfo: JSX.Element[] = interpreters.interpreters.map(el => {
+    return (
+      <GridItem key={el.name}>
         <UserImage src="https://scx1.b-cdn.net/csz/news/800/2019/tiger.jpg" />
         <DescList>
           <DescItem>
-            <DescTitle>김민희</DescTitle>
+            <DescTitle>{el.name_kr}</DescTitle>
           </DescItem>
           <DescItem>
-            <DescText>misinterpreter@abc.com</DescText>
+            <DescText>{el.email}</DescText>
           </DescItem>
           <DescItem>
-            <DescText>여기다가는 뭘 넣어야 하지?</DescText>
+            <DescText>{el.message}</DescText>
           </DescItem>
         </DescList>
       </GridItem>
-
-      <GridItem>
-        <UserImage src="https://scx1.b-cdn.net/csz/news/800/2019/tiger.jpg" />
-        <DescList>
-          <DescItem>
-            <DescTitle>이현서</DescTitle>
-          </DescItem>
-          <DescItem>
-            <DescText>misinterpreter@abc.com</DescText>
-          </DescItem>
-          <DescItem>
-            <DescText>장우전</DescText>
-          </DescItem>
-        </DescList>
-      </GridItem>
-
-      <GridItem>
-        <UserImage src="https://scx1.b-cdn.net/csz/news/800/2019/tiger.jpg" />
-        <DescList>
-          <DescItem>
-            <DescTitle>장우전</DescTitle>
-          </DescItem>
-          <DescItem>
-            <DescText>misinterpreter@abc.com</DescText>
-          </DescItem>
-          <DescItem>
-            <DescText>장우전</DescText>
-          </DescItem>
-        </DescList>
-      </GridItem>
-
-      <GridItem>
-        <UserImage src="https://scx1.b-cdn.net/csz/news/800/2019/tiger.jpg" />
-        <DescList>
-          <DescItem>
-            <DescTitle>황종옥</DescTitle>
-          </DescItem>
-          <DescItem>
-            <DescText>misinterpreter@abc.com</DescText>
-          </DescItem>
-          <DescItem>
-            <DescText>장우전</DescText>
-          </DescItem>
-        </DescList>
-      </GridItem>
-    </Grid>
-  );
+    );
+  });
+  return <Grid>{interpreterInfo}</Grid>;
 };
 
 export default AboutUs;
