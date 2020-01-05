@@ -1,3 +1,32 @@
 {
-  "interpreters": ["minhee", "hyunseo", "ujeon", "jongock"]
+  "interpreters": [
+    {
+      "name": "minhee",
+      "name_kr": "김민희",
+      "email": null,
+      "image": null,
+      "message": null
+    },
+    {
+      "name": "hyunseo",
+      "name_kr": "이현서",
+      "email": null,
+      "image": null,
+      "message": null
+    },
+    {
+      "name": "ujeon",
+      "name_kr": "장우전",
+      "email": "wj9304@gmail.com",
+      "image": null,
+      "message": null
+    },
+    {
+      "name": "jongock",
+      "name_kr": "황종옥",
+      "email": null,
+      "image": null,
+      "message": null
+    }
+  ]
 }
