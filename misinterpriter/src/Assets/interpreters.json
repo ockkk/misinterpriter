@@ -1,3 +1,8 @@
 {
-  "interpreters": ["minhee", "hyunseo", "ujeon", "jongock"]
+  "interpreters": [
+    { "name": "minhee", "email": null, "image": null },
+    { "name": "hyunseo", "email": null, "image": null },
+    { "name": "ujeon", "email": "wj9304@gmail.com", "image": null },
+    { "name": "jongock", "email": null, "image": null }
+  ]
 }
