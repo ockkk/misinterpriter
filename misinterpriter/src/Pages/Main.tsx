@@ -4,6 +4,7 @@ import Board from 'Components/Board'
 import articleData from '../Assets/articleData.json'
 import {Row, Col} from 'antd'
 import {Title} from './Mainstyle'
+import Filter from '../Components/Filter/Filter'
 
 const Main: React.FC= () =>{
   var articleArr = Object.entries(articleData)
@@ -42,7 +43,10 @@ const Main: React.FC= () =>{
   return (
     <div style={{padding:"10px", backgroundColor:"#f4f7f6"}}>
       <Row style={{paddingLeft:"100px", paddingRight:"100px"}}>
-          <Title>Article List</Title>
+          <div>
+            <Title>Article List</Title>
+            <Filter/>
+          </div>
           {articleComponent}
       </Row>
     </div>
