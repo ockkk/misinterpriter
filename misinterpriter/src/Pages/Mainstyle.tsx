@@ -1,10 +1,11 @@
 import sc from 'styled-components'
 
-export const Title = sc.h1`
+export const Title = sc.span`
   font-size: 40px;
   position: relative;
   left: 10px;
   font-weight: 900;
+  margin-right: 20px;
 `
 export const TagCol = sc.div`
   position:"relative";
