@@ -33,3 +33,8 @@
 - 제목에 띄어쓰기 대신 '-' 사용하고, 카테고리 태그와 번역자 이름 달기 ( 카테고리\_이름\_포스팅-제목.md)
   - ex: javascript_hyunseo_what-is-오역자들?.md
 - 첫 줄은 썸네일 이미지 (추후에 변경될 수 도 있습니다.)
+
+### Tag
+
+[ frontend , backend , tip , security ]
+[ css , javascript , react , nodejs , graphql , typescript , reactnative ]
