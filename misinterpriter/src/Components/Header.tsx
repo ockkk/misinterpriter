@@ -8,7 +8,7 @@ const Header: React.FC = () => {
             Misinterpriter
             <Line/>
           </Logo>
-          <div style={{"float":"right" , "padding": "3px"}}>
+          <div style={{"float":"right"}}>
             <Router>
               {/* <Link to="/"> */}
               <a href="http://localhost:3000/">
