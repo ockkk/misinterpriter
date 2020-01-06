@@ -7,21 +7,21 @@ const filePath = "./Assets/interpreters.json";
     const articleInfo = {};
     if (err) throw err;
     const parsedData = JSON.parse(data.toString());
-    parsedData.interpreters.forEach(name => {
-      fs.readdir(`./Assets/${name}`, async (err, files) => {
+    parsedData.interpreters.forEach(data => {
+      fs.readdir(`./Assets/${data.name}`, async (err, files) => {
         if (err) throw err;
 
         files = await Promise.all(
           files.map(filename => {
             return new Promise((res, rej) => {
-              fs.readFile(`./Assets/${name}/${filename}`, "utf8", function(
+              fs.readFile(`./Assets/${data.name}/${filename}`, "utf8", function(
                 err,
-                data
+                article
               ) {
                 try {
                   if (err) throw err;
                   const result = {};
-                  const content = data.split("\n");
+                  const content = article.split("\n");
                   let title = content[0].replace("# ", "");
                   let image;
 
@@ -36,7 +36,7 @@ const filePath = "./Assets/interpreters.json";
                     }
                   }
 
-                  result.author = name;
+                  result.author = data.name;
                   result.title = title;
                   result.image = !image ? null : image;
                   result.filepath = filename;
@@ -53,7 +53,7 @@ const filePath = "./Assets/interpreters.json";
           })
         ).then(res => res);
 
-        articleInfo[name] = files;
+        articleInfo[data.name] = files;
 
         fs.writeFile(
           "./Assets/articleData.json",
