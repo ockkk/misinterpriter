@@ -36,5 +36,5 @@
 
 ### Tag
 
-[ frontend , backend , tip , security ]
-[ css , javascript , react , nodejs , graphql , typescript , reactnative ]
+- [ frontend , backend , tip , security , git , cli , tdd , etc ]
+- [ css , javascript , react , nodejs , graphql , typescript , reactnative ]
