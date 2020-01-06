@@ -1,12 +1,16 @@
 import React, {useState} from 'react'
 import { Select } from 'antd';
+import './style.css'
 
-const OPTIONS = ['Apples', 'Nails', 'Bananas', 'Helicopters'];
 
-const Filter: React.FC= () => {
+type Tagprops = {
+  TagName: Array<string>;
+};
 
-  const [tagArr, settagArr ] = useState([])
-  // const filteredOptions = OPTIONS.filter(o => !tagArr.includes(o));
+const Filter: React.FC<Tagprops>= (TagName:any) => {
+  console.log(TagName["TagName"])
+  const [tagArr, settagArr ] = useState<string[]>([])
+  const filteredOptions = TagName["TagName"].filter( (o:any) => !tagArr.includes(o))
 
   const handleCange = (e:any) => {
     settagArr(e)
@@ -15,15 +19,15 @@ const Filter: React.FC= () => {
     <Select
     mode="multiple"
     placeholder="Inserted are removed"
-    value={[]}
+    value={tagArr}
     onChange={handleCange}
-    style={{ width: '30%', border: "solid 2px", bottom: "10px", backgroundColor:"#f4f7f6" }}
+    style={{ width: '70%', bottom: "5px", backgroundColor:"#f4f7f6" }}
   >
-    {/* {filteredOptions.map(item => (
+    {filteredOptions.map((item:any) => (
       <Select.Option key={item} value={item}>
         {item}
       </Select.Option>
-    ))} */}
+    ))}
   </Select>
   )
 }
