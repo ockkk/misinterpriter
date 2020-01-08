@@ -3,7 +3,7 @@ import { StyledReactMarkdown, MainDiv } from "./style";
 import FootBar from "../../Components/Footbar/Footbar";
 import { RemoteBtn } from "./RemoteBtn";
 import Discussion from "Components/Discussion";
-import { Avatar } from "antd";
+import { DeatailTitle } from "./DeatailTitle";
 
 // interface match<P> {
 //   params:P;
@@ -24,9 +24,10 @@ export const Detail: React.FC = (props: any) => {
       setText(Post);
     }
     getPosts();
-  }, [null]);
+  }, [props.match.params.name, props.match.params.title]);
 
   const Upper = props.match.params.name.toUpperCase();
+  console.log(Upper);
   return (
     <div
       style={{
@@ -34,14 +35,8 @@ export const Detail: React.FC = (props: any) => {
         height: "100%"
       }}
     >
-      <div style={{ float: "left", width: "100%", paddingBottom: 20 }}>
-        <Avatar size={64} icon="user" style={{ float: "left", width: "7%" }} />
-        <div style={{ float: "left", width: "93%" }}>
-          <div>{Upper}</div>
-          <div>2020/00/00</div>
-        </div>
-      </div>
-      <div></div>
+      <DeatailTitle name={Upper} />
+
       <MainDiv>
         <StyledReactMarkdown source={text}></StyledReactMarkdown>
         <RemoteBtn />
