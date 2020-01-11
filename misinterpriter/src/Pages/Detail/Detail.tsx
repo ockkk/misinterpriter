@@ -35,9 +35,21 @@ export const Detail: React.FC = (props: any) => {
         height: "100%"
       }}
     >
-      <DeatailTitle name={Upper} />
-
       <MainDiv>
+        <div
+          style={{
+            fontWeight: 600,
+            fontSize: 40,
+            fontFamily: "Fjalla One",
+            textAlign: "center",
+            marginRight: "3%",
+            marginTop: "5%",
+            color: "black"
+          }}
+        >
+          {text.split("\n")[0].replace("#", "")}
+        </div>
+        <DeatailTitle name={Upper} />
         <StyledReactMarkdown source={text}></StyledReactMarkdown>
         <RemoteBtn />
       </MainDiv>
