@@ -1,4 +1,4 @@
-## 스타트업을 준비하는 주니어 개발자들을 위한 팁
+# 스타트업을 준비하는 주니어 개발자들을 위한 팁
 
 ![Photo by Frame Harirak on Unsplash](https://res.cloudinary.com/practicaldev/image/fetch/s--HcaADbCK--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/5zw7rjghbuc79aahcr5p.jpg)
 
