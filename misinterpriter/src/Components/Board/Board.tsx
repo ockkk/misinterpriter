@@ -1,8 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-// import { Tag } from 'antd';
-import { Image, Title, Name, Tag, Tagbox } from './Boardstyle'
-import { Detail } from '../Pages/Detail/Detail'
+import { Image, Title, Name, Tag, Tagbox } from './style'
+import { Detail } from '../../Pages/Detail/Detail'
 
 
 type Articleprops = {

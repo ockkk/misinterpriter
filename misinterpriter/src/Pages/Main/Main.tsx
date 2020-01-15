@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import {Link} from 'react-router-dom'
-import Board from 'Components/Board'
-import articleData from '../Assets/articleData.json'
+import Board from 'Components/Board/Board'
+import articleData from '../../Assets/articleData.json'
 import {Row, Col, Tag} from 'antd'
-import {Title} from './Mainstyle'
-import Filter from '../Components/Filter/Filter'
+import {Title} from './style'
 
 const Main: React.FC= () =>{
   var articledata = Object.entries(articleData)

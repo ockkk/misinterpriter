@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Link} from 'react-router-dom'
-import { Box, Logo, Line, Btn } from './Headerstyle';
+import { Box, Logo, Line, Btn } from './style';
 
 const Header: React.FC = () => {
   return <Box>
