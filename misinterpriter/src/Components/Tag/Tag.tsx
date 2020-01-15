@@ -7,11 +7,10 @@ type Tagprops = {
   TagName: Array<string>;
 };
 
-const Filter: React.FC<Tagprops>= (TagName:any) => {
-  console.log(TagName["TagName"])
+const Filter: React.FC<Tagprops>= (TagName:any, handleTag) => {
   const [tagArr, settagArr ] = useState<string[]>([])
   const filteredOptions = TagName["TagName"].filter( (o:any) => !tagArr.includes(o))
-
+  console.log(handleTag)
   const handleCange = (e:any) => {
     settagArr(e)
   }

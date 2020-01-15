@@ -6,20 +6,17 @@ import {Row, Col, Tag} from 'antd'
 import {Title} from './Mainstyle'
 import Filter from '../Components/Filter/Filter'
 
-
 const Main: React.FC= () =>{
-  var articleArr = Object.entries(articleData)
+  var articledata = Object.entries(articleData)
   const articleComponent:any = []
   const TagName:Array<string> = []
-  // const [articleArr, setarticleArr] = useState(Object.entries(articleData))
+  const [articleArr, setarticleArr] = useState(articleComponent)
 
-  articleArr.map((data) => {
+  articledata.map((data) => {
     for(let i= 0; i< data[1].length; i++){
       articleComponent.push(
         <Col key={data[1][i]["title"]} span={6}>
-          <Link to={`/${data[0]}/${data[1][i]["filepath"]}`}>
-            <Board data={data[1][i]}/>
-          </Link>
+            <Board data={data[1][i]} handleTag={handleTag}/>
           <div style={{"margin":"20px"}}/>
         </Col>
         )
@@ -28,30 +25,39 @@ const Main: React.FC= () =>{
       }
     }
   })
-  useEffect(()=> {
-    // articleArr.map((data) => {
-    //   for(let i= 0; i< data[1].length; i++){
-    //     articleComponent.push(
-    //       <Col span={6}>
-    //         <Link to={`/${data[0] + data[1][i]}`}>
-    //         <Board name={data[0]} title={data[1][i]}/>
-    //         </Link>
-    //         <div style={{"margin":"10px"}}/>
-    //       </Col>
-    //       )
-    //   }
-    // })
-  })
+
+  function FilterArticle(tag:any){
+    const filterArticleArr:any = []
+    for(let i=0; i < articledata.length; i++){
+      articledata[i][1].map(data => {
+        if(data["category"] === tag){
+          filterArticleArr.push(
+            <Col key={data["title"]} span={6}>
+              <Board data={data} handleTag={handleTag}/>
+              <div style={{"margin":"20px"}}/>
+            </Col>
+          )
+        }
+      })
+    }
+    setarticleArr(filterArticleArr)
+  }
+
+  function handleTag(e:any){
+    FilterArticle(e.target.innerHTML)
+  }
 
   return (
     <div style={{padding:"10px", backgroundColor:"#f4f7f6"}}>
       <Row style={{paddingLeft:"100px", paddingRight:"100px"}}>
           <div>
             <Title >Article List</Title>
-            <Filter TagName={TagName}/>
           </div>
-          {articleComponent}
+          {articleArr}
       </Row>
+      <button onClick={FilterArticle}>read more</button>
+      <Tag color="magenta" onClick={handleTag}>react</Tag>
+      <Tag color="magenta" onClick={handleTag}>jongock</Tag>
     </div>
   )
 }
