@@ -1,35 +1,19 @@
 import sc from 'styled-components'
 import { Button }from 'antd'
 
-export const TitleText = sc.div`
-  font-weight: 600px;
-  font-size: 23px;
-  font-family: Fjalla One;
-  color: white;
-`;
-
 export const Box = sc.div`
   height: 70px;
   padding: 15px;
+  padding-left: 70px;
+  padding-right: 100px;
 `
-export const Logo = sc.div`
-  height: 60px;
+export const Logo = sc.img`
   position: relative;
-  float: left;
-  bottom: 25px;
-  margin-bottom: ;
-  font-size: 50px;
+  width: 350px;
+  bottom: 14px;
 `
 
-export const Line = sc.hr`
-  margin: 0px;
-  height: 5px;
-  background-color: blue;
-  position: relative;
-  bottom: 15px; 
-`
 export const Btn = sc(Button)`
-  margin-right: 10px;
-  width: 100px;
-  font-weight: bold;
+  color: black;
+  border: solid 1px;
 `
