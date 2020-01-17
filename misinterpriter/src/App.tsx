@@ -9,8 +9,8 @@ import articleData from "./Assets/articleData.json";
 const App: React.FC = props => {
   return (
     <div>
-      <Header />
       <Router>
+      <Header />
         <Route exact path="/" component={Main} />
         <Route exact path={`/:name/:title`} component={Detail} />
       </Router>

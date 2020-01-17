@@ -1,6 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-import { Image, Title, Name, Tag, Tagbox } from './style'
+import { Image, Title, Name, Tag, Tagbox, Box } from './style'
 import { Detail } from '../../Pages/Detail/Detail'
 
 
@@ -21,7 +21,7 @@ const Board: React.FC<Articleprops> = ({data, handleTag}:any) => {
   }
 
   return (
-    <div>
+    <Box>
       <Link to={`/${name}/${filepath}`}>
       <Image src={image} onClick={()=> handleClick()}></Image>
       <Title>
@@ -32,7 +32,7 @@ const Board: React.FC<Articleprops> = ({data, handleTag}:any) => {
         <Tag onClick={handleTag}>{tag}</Tag>
       </Tagbox>
       <Name>{name}</Name>
-    </div>
+    </Box>
   )
 }
 

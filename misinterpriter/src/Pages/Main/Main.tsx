@@ -30,9 +30,9 @@ const Main: React.FC= () =>{
       articledata[i][1].map(data => {
         if(data["category"] === tag){
           filterArticleArr.push(
-            <Col key={data["title"]} span={6}>
+            <Col key={data["title"]} span={5}>
               <Board data={data} handleTag={handleTag}/>
-              <div style={{"margin":"20px"}}/>
+              {/* <div style={{"margin":"20px"}}/> */}
             </Col>
           )
         }
@@ -51,7 +51,6 @@ const Main: React.FC= () =>{
         articleComponent.push(
           <Col key={data[1][i]["title"]} span={6}>
               <Board data={data[1][i]} handleTag={handleTag}/>
-            <div style={{"margin":"20px"}}/>
           </Col>
           )
         if(!TagName.includes(data[1][i]["category"])){
@@ -61,16 +60,11 @@ const Main: React.FC= () =>{
     })
   },[])
   return (
-    <div style={{padding:"10px", backgroundColor:"#f4f7f6"}}>
+    <div style={{padding:"10px", backgroundColor:"#f4f5f8"}}>
       <Row style={{paddingLeft:"100px", paddingRight:"100px"}}>
-          <div>
-            <Title >Article List</Title>
-          </div>
           {articleArr}
       </Row>
       <button onClick={FilterArticle}>read more</button>
-      <Tag color="magenta" onClick={handleTag}>react</Tag>
-      <Tag color="magenta" onClick={handleTag}>jongock</Tag>
     </div>
   )
 }
