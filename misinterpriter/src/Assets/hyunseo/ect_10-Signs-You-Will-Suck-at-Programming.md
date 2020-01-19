@@ -1,8 +1,8 @@
-# 리액트 Hooks : useEffect() 사용법
+# 당신이 프로그래밍에서 빠져나가야 하는 10가지 신호
 
-- **본기사는 [React Hooks: How to use useEffect()](https://medium.com/javascript-in-plain-english/react-hooks-how-to-use-useeffect-ecea3e90d84f) 을 번역한 기사입니다.**
+- **본기사는 [10 Signs You Will Suck at Programming](https://blog.usejournal.com/10-signs-you-will-suck-at-programming-5497a6a52c5c) 을 번역한 기사입니다.**
 
-출저 : https://medium.com/javascript-in-plain-english/react-hooks-how-to-use-useeffect-ecea3e90d84f
+출저 : https://blog.usejournal.com/10-signs-you-will-suck-at-programming-5497a6a52c5c
 
 ![think](https://miro.medium.com/max/4096/0*cF-7zKh4jqldcDf2)
 
