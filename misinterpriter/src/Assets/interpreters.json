@@ -4,28 +4,28 @@
       "name": "minhee",
       "name_kr": "김민희",
       "email": null,
-      "image": null,
+      "image": "../../Assets/image/profile/minhee.png",
       "message": null
     },
     {
       "name": "hyunseo",
       "name_kr": "이현서",
       "email": null,
-      "image": null,
+      "image": "../../Assets/image/profile/hyunseo.jpg",
       "message": null
     },
     {
       "name": "ujeon",
       "name_kr": "장우전",
       "email": "wj9304@gmail.com",
-      "image": null,
+      "image": "../../Assets/image/profile/ujeon.png",
       "message": null
     },
     {
       "name": "jongock",
       "name_kr": "황종옥",
       "email": null,
-      "image": null,
+      "image": "../../Assets/image/profile/jongock.jpg",
       "message": null
     }
   ]

@@ -18,7 +18,6 @@ export const Grid = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 90%;
   height: 50vh;
 
   @media only screen and ${device.tablet} {
@@ -31,6 +30,7 @@ export const GridItem = styled.div`
   display: flex;
   width: 25rem;
   height: 100%;
+  background-color: white;
 
   flex-direction: column;
   align-items: center;
@@ -39,11 +39,18 @@ export const GridItem = styled.div`
   animation: 2s ${moveInBottom};
   border-radius: 15px;
 
-  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.4);
   transition: transform 0.5s;
 
   &:hover {
+    box-shadow: 3px 4px 6px rgba(0, 0, 0, 0.43);
     transform: scale(1.1);
+    background-color: white;
+    z-index: 10;
+  }
+
+  &:not(:hover) {
+    z-index: 1;
   }
 
   @media only screen and ${device.tablet} {
@@ -137,4 +144,17 @@ export const DescText = styled.p`
     font-size: 1.3rem;
     margin: 0;
   }
+`;
+
+export const Title = styled.h1`
+  width: 30%;
+  margin: 0;
+  font-size: 3rem;
+  font-weight: 400;
+  letter-spacing: 140%;
+  text-align: center;
+`;
+
+export const SectionMember = styled.main`
+  // text-align: center;
 `;

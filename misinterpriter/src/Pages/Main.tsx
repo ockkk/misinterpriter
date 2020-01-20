@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom'
 import Board from 'Components/Board'
 import articleData from '../Assets/articleData.json'
 import {Row, Col} from 'antd'
-import {ColBox, TagBox} from './Mainstyle'
+import {Title} from './Mainstyle'
 
 const Main: React.FC= () =>{
   var articleArr = Object.entries(articleData)
@@ -14,11 +14,11 @@ const Main: React.FC= () =>{
   articleArr.map((data) => {
     for(let i= 0; i< data[1].length; i++){
       articleComponent.push(
-        <Col key={data[1][i]} span={6}>
-          <Link to={`/${data[0]}/${data[1][i]}`}>
+        <Col key={data[1][i]["title"]} span={6}>
+          <Link to={`/${data[0]}/${data[1][i]["filepath"]}`}>
             <Board data={data[1][i]}/>
           </Link>
-          <div style={{"margin":"10px"}}/>
+          <div style={{"margin":"20px"}}/>
         </Col>
         )
     }
@@ -40,14 +40,10 @@ const Main: React.FC= () =>{
   })
 
   return (
-    <div style={{padding:"10px"}}>
-      <Row>
-        <Col span={6}>
-          <ColBox>
-            <TagBox></TagBox>
-          </ColBox>
-        </Col>
-        {articleComponent}
+    <div style={{padding:"10px", backgroundColor:"#f4f7f6"}}>
+      <Row style={{paddingLeft:"100px", paddingRight:"100px"}}>
+          <Title>Article List</Title>
+          {articleComponent}
       </Row>
     </div>
   )

@@ -1,23 +1,38 @@
 import React from "react";
 
 import {
+  SectionMember,
+  Title,
   Grid,
   GridItem,
   UserImage,
   DescList,
   DescItem,
   DescTitle,
-  DescSubTitle,
   DescText
 } from "./AboutUsStyle";
 
 import interpreters from "../../Assets/interpreters.json";
 
+type Image = {
+  [ujeon: string]: string;
+  minhee: string;
+  hyunseo: string;
+  jongock: string;
+};
+
+const profileImage: Image = {
+  ujeon: require("../../Assets/image/profile/ujeon.png"),
+  minhee: require("../../Assets/image/profile/minhee.png"),
+  hyunseo: require("../../Assets/image/profile/hyunseo.jpg"),
+  jongock: require("../../Assets/image/profile/jongock.jpg")
+};
+
 const AboutUs: React.FC = () => {
   const interpreterInfo: JSX.Element[] = interpreters.interpreters.map(el => {
     return (
       <GridItem key={el.name}>
-        <UserImage src="https://scx1.b-cdn.net/csz/news/800/2019/tiger.jpg" />
+        <UserImage src={profileImage[el.name]} alt={el.name} />
         <DescList>
           <DescItem>
             <DescTitle>{el.name_kr}</DescTitle>
@@ -32,7 +47,11 @@ const AboutUs: React.FC = () => {
       </GridItem>
     );
   });
-  return <Grid>{interpreterInfo}</Grid>;
+  return (
+    <SectionMember>
+      <Grid>{interpreterInfo}</Grid>
+    </SectionMember>
+  );
 };
 
 export default AboutUs;
