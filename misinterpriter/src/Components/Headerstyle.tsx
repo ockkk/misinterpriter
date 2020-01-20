@@ -1,5 +1,5 @@
-import sc from 'styled-components'
-import { Button }from 'antd'
+import sc from "styled-components";
+import { Button } from "antd";
 
 export const TitleText = sc.div`
   font-weight: 600px;
@@ -11,7 +11,7 @@ export const TitleText = sc.div`
 export const Box = sc.div`
   height: 70px;
   padding: 15px;
-`
+`;
 export const Logo = sc.div`
   height: 60px;
   position: relative;
@@ -19,7 +19,7 @@ export const Logo = sc.div`
   bottom: 25px;
   margin-bottom: ;
   font-size: 50px;
-`
+`;
 
 export const Line = sc.hr`
   margin: 0px;
@@ -27,9 +27,9 @@ export const Line = sc.hr`
   background-color: blue;
   position: relative;
   bottom: 15px; 
-`
+`;
 export const Btn = sc(Button)`
   margin-right: 10px;
   width: 100px;
   font-weight: bold;
-`
+`;

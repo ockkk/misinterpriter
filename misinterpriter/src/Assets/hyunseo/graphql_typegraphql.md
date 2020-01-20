@@ -1,4 +1,4 @@
-# GraphQL + TypeSCript = TypeGraphQL
+# GraphQL + TypeScript = TypeGraphQL
 
 - **본기사는 [Top 5 Reasons to Use GraphQL (MARCH 25, 2018 Michał Lytek)](https://medium.com/@MichalLytek/graphql-typescript-typegraphql-ba0225cb4bed) 을 번역한 기사입니다.**
 
