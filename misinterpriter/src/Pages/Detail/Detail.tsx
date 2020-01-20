@@ -3,6 +3,7 @@ import { StyledReactMarkdown, MainDiv } from "./style";
 import FootBar from "../../Components/Footbar/Footbar";
 import { RemoteBtn } from "./RemoteBtn";
 import Discussion from "Components/Discussion";
+import { DeatailTitle } from "./DeatailTitle";
 
 // interface match<P> {
 //   params:P;
@@ -23,8 +24,10 @@ export const Detail: React.FC = (props: any) => {
       setText(Post);
     }
     getPosts();
-  }, [props.name, props.postTitle]);
+  }, [props.match.params.name, props.match.params.title]);
 
+  const Upper = props.match.params.name.toUpperCase();
+  console.log(Upper);
   return (
     <div
       style={{
@@ -33,6 +36,20 @@ export const Detail: React.FC = (props: any) => {
       }}
     >
       <MainDiv>
+        <div
+          style={{
+            fontWeight: 600,
+            fontSize: 40,
+            fontFamily: "Fjalla One",
+            textAlign: "center",
+            marginRight: "3%",
+            marginTop: "5%",
+            color: "black"
+          }}
+        >
+          {text.split("\n")[0].replace("#", "")}
+        </div>
+        <DeatailTitle name={Upper} />
         <StyledReactMarkdown source={text}></StyledReactMarkdown>
         <RemoteBtn />
       </MainDiv>

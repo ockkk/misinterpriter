@@ -1,44 +1,48 @@
 "use-strict";
 const fs = require("fs");
 const filePath = "./Assets/interpreters.json";
+const representativeImg =
+  "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https://k.kakaocdn.net/dn/nmoA9/btqBgDJqta3/oq4kWxP7AMGjpMstaE5sfk/img.png";
 
 (() => {
   fs.readFile(filePath, (err, data) => {
     const articleInfo = {};
     if (err) throw err;
     const parsedData = JSON.parse(data.toString());
-    parsedData.interpreters.forEach(name => {
-      fs.readdir(`./Assets/${name}`, async (err, files) => {
+    parsedData.interpreters.forEach(data => {
+      fs.readdir(`./Assets/${data.name}`, async (err, files) => {
         if (err) throw err;
 
         files = await Promise.all(
           files.map(filename => {
             return new Promise((res, rej) => {
-              fs.readFile(`./Assets/${name}/${filename}`, "utf8", function(
+              fs.readFile(`./Assets/${data.name}/${filename}`, "utf8", function(
                 err,
-                data
+                article
               ) {
                 try {
                   if (err) throw err;
                   const result = {};
-                  const content = data.split("\n");
+                  const content = article.split("\n");
                   let title = content[0].replace("# ", "");
                   let image;
 
                   for (let i = 0; i < content.length; i++) {
-                    if (content[i].includes("jpg") || 
-                        content[i].includes("png") || 
-                        content[i].includes("jpeg") || 
-                        content[i].includes(".gif") || 
-                        content[i].includes("img")) {
+                    if (
+                      content[i].includes("jpg") ||
+                      content[i].includes("png") ||
+                      content[i].includes("jpeg") ||
+                      content[i].includes(".gif") ||
+                      content[i].includes("img")
+                    ) {
                       image = content[i].split("(")[1].split(")")[0];
                       break;
                     }
                   }
 
-                  result.author = name;
+                  result.author = data.name;
                   result.title = title;
-                  result.image = !image ? null : image;
+                  result.image = !image ? representativeImg : image;
                   result.filepath = filename;
                   result.category = filename.split("_")[0];
 
@@ -53,7 +57,7 @@ const filePath = "./Assets/interpreters.json";
           })
         ).then(res => res);
 
-        articleInfo[name] = files;
+        articleInfo[data.name] = files;
 
         fs.writeFile(
           "./Assets/articleData.json",
