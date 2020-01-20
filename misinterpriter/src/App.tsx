@@ -1,10 +1,9 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import "./App.css";
 import Header from "./Components/Header/Header";
 import Main from "./Pages/Main/Main";
 import { Detail } from "../src/Pages/Detail/Detail";
-import articleData from "./Assets/articleData.json";
 
 const App: React.FC = props => {
   return (

@@ -1,6 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-import { Image, Title, Name, Tag, Tagbox, Box } from './style'
+import { Image, Title, Name, Tag, Tagbox, Box, ProfileImg, NameBox } from './style'
 import { Detail } from '../../Pages/Detail/Detail'
 
 
@@ -31,7 +31,10 @@ const Board: React.FC<Articleprops> = ({data, handleTag}:any) => {
       <Tagbox>
         <Tag onClick={handleTag}>{tag}</Tag>
       </Tagbox>
-      <Name>{name}</Name>
+      <NameBox>
+        <ProfileImg/>
+        <Name>{name}</Name>
+      </NameBox>
     </Box>
   )
 }
