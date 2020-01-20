@@ -12,6 +12,7 @@ export const Box = sc.div`
     box-shadow: 0 5px 20px rgba(0,0,0,0.3);
   }
 `
+
 export const Image = sc.img`
   border-radius: 5px 5px 0px 0px;
   width: 100%;
@@ -42,12 +43,24 @@ cursor: pointer;
 font-size: smaller;
 `
 
-export const Name = sc.div`
+export const NameBox = sc.div`
+  padding: 5px;
+`
+
+export const Name = sc.span`
+  position: relative;
+  top: 1px;
   border-radius: 0px 0px 5px 5px;
-  background-color: white;
   width: 100%;
   height: 40px;
-  padding: 8px;
-  padding-left: 10px;
   color: black;
+`
+
+export const ProfileImg = sc.img`
+  margin-left: 10px;
+  margin-right: 7px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #9e9e9e82;
 `
