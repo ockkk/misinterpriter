@@ -9,7 +9,7 @@ import hyunseo from "../../Assets/image/profile/hyunseo.jpg"
 
 type Articleprops = {
   data: object;
-  handleTag: any;
+  handleTag: (e: any) => void;
 };
 
 const Board: React.FC<Articleprops> = ({data, handleTag}:any) => {
@@ -20,6 +20,7 @@ const Board: React.FC<Articleprops> = ({data, handleTag}:any) => {
   const filepath = data["filepath"]
   const profileArr:any = {"ujeon": ujeon, "jongock": jongock, "minhee": minhee, "hyunseo": hyunseo}
   let profile
+  
   for(let i in profileArr){
     if(name === i){
       profile = profileArr[i]
@@ -27,7 +28,6 @@ const Board: React.FC<Articleprops> = ({data, handleTag}:any) => {
     }
   }
   
-  console.log(profile)
   const handleClick = () => {
     return <Detail/>
   }

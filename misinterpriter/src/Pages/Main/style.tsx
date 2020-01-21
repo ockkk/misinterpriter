@@ -1,27 +1,14 @@
 import sc from 'styled-components'
 
-export const Title = sc.span`
-  font-size: 40px;
-  position: relative;
-  left: 10px;
-  font-weight: 900;
-  margin-right: 20px;
-`
-export const TagCol = sc.div`
-  position:"relative";
-  float:"left;
-  width:"15%";
-`
-export const TagBox = sc.div`
-  border: solid 2px #d9d9d9;
-  height: 300px;
-  width: 95%;
+export const ReadMoreBtn = sc.button`
+  width: 30%;
+  height: 50px;
   border-radius: 5px;
+  border: 1px solid #eff0f4;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  &: hover{
+    transform: scale(1.1);
+    transition: transform 0.2s linear;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+  }
 `
-
-export const ArticleCol = sc.div`
-  position:"relative";
-  float:"left;
-  width:"85%";
-`
-

@@ -1,34 +1,32 @@
-import React, { useState, useEffect } from 'react';
-import Board from 'Components/Board/Board'
-import articleData from '../../Assets/articleData.json'
-import {Row, Col} from 'antd'
+import React, { useState, useEffect } from "react";
+import Board from "../../Components/Board/Board";
+import articleData from "../../Assets/articleData.json";
+import { Row, Col } from "antd";
+import {ReadMoreBtn} from './style'
 
-const Main: React.FC= () =>{
-  var articledata = Object.entries(articleData)
-  const articleList:any = []
-  
-  for(let i in articledata){
-    for(let j=0; j < articledata[i][1].length; j++){
-      articleList.push(articledata[i][1][j])
-    }
-  }
-  
-  let articleSlice: any = articleList.slice(0, 12);
-  let articleComponent: any = articleSlice.map((data: any) => {
-    return (
-      <Col key={data["title"]} span={6}>
-        <Board data={data} handleTag={handleTag} />
-        <div style={{ margin: "20px" }} />
-      </Col>
-    );
-  });
+type Article = {
+  author: string;
+  title: string;
+  image: string;
+  filepath: string;
+  category: string;
+};
 
-  const [articleArr, setarticleArr] = useState(articleComponent)
-  const [length, setlength] = useState({"Preitems":0, "items":12})
+const articledata = Object.values(articleData);
+let articleList: Article[] = [];
 
-  const CallArticle = () => {
-    let temp: [JSX.Element];
-    temp = articleSlice.map((data: any) => {
+articledata.forEach(data => {
+  articleList = [...articleList, ...data];
+});
+
+const Main: React.FC = () => {
+  const [articlesForView, setArticlesForView] = useState();
+  const [viewCount, setViewCount] = useState(12);
+  const count = 12;
+  const makeArticlesForView = (count: number) => {
+    let forRender: JSX.Element[];
+    const slicedList = articleList.slice(0, count);
+    forRender = slicedList.map((data: any) => {
       return (
         <Col key={data["title"]} span={6}>
           <Board data={data} handleTag={handleTag} />
@@ -36,49 +34,45 @@ const Main: React.FC= () =>{
         </Col>
       );
     });
-    articleComponent = [...articleComponent, ...temp];
-    setarticleArr(articleComponent);
-  }
-
-  const handleReadMore = async() => {
-    if (articleList.length > length.items) {
-      setlength({ Preitems: length.items, items: length.items + 12 });
+    setArticlesForView(forRender);
+  };
+  
+  const handleReadMore = () => {
+    if (articleList.length > viewCount) {
+      setViewCount(viewCount + count);
     }
+  };
+ 
+  function FilterArticle(tag: string) {
+    const filterArticleArr:any = [];
+    articleList.map(data => {
+      if(data["category"] === tag){
+        filterArticleArr.push(
+          <Col key={data["title"]} span={6}>
+            <Board data={data} handleTag={handleTag} />
+          </Col>
+        );
+      }
+    })
+    setArticlesForView(filterArticleArr);
   }
-
-  function FilterArticle(tag:any){
-    const filterArticleArr:any = []
-    for(let i=0; i < articledata.length; i++){
-      articledata[i][1].map(data => {
-        if(data["category"] === tag){
-          filterArticleArr.push(
-            <Col key={data["title"]} span={6}>
-              <Board data={data} handleTag={handleTag}/>
-            </Col>
-          )
-        }
-      })
-    }
-    setarticleArr(filterArticleArr)
+  
+  function handleTag(e: any) {
+    FilterArticle(e.target.innerHTML);
   }
-
-  function handleTag(e:any){
-    FilterArticle(e.target.innerHTML)
-  }
-
+  
   useEffect(() => {
-    if (length.items !== 12) {
-      articleSlice = articleList.slice(length.Preitems, length.items);
-      CallArticle();
-    }
-  }, [length]);
+    makeArticlesForView(viewCount);
+  }, [viewCount]);
 
   return (
     <div style={{padding:"10px", backgroundColor:"#f4f5f8"}}>
       <Row style={{paddingLeft:"100px", paddingRight:"100px"}}>
-          {articleArr}
+          {articlesForView}
       </Row>
-      <button onClick={handleReadMore}>read more</button>
+      <div style={{textAlign: "center"}}>
+        <ReadMoreBtn onClick={handleReadMore}>read more</ReadMoreBtn>
+      </div>
     </div>
   )
 }
