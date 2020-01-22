@@ -14,20 +14,21 @@ import { DeatailTitle } from "./DeatailTitle";
 
 export const Detail: React.FC = (props: any) => {
   const [text, setText] = useState<string>("");
+
   useEffect(() => {
     async function getPosts() {
       const mdFile = await fetch(
         require(`Assets/${props.match.params.name}/${props.match.params.title}`)
       );
       const Post = await mdFile.text();
-      console.log(Post);
+
       setText(Post);
     }
     getPosts();
   }, [props.match.params.name, props.match.params.title]);
 
   const Upper = props.match.params.name.toUpperCase();
-  console.log(Upper);
+  // console.log(Upper);
   return (
     <div
       style={{
@@ -36,21 +37,28 @@ export const Detail: React.FC = (props: any) => {
       }}
     >
       <MainDiv>
-        <div
-          style={{
-            fontWeight: 600,
-            fontSize: 40,
-            fontFamily: "Fjalla One",
-            textAlign: "center",
-            marginRight: "3%",
-            marginTop: "5%",
-            color: "black"
-          }}
-        >
-          {text.split("\n")[0].replace("#", "")}
+        <div style={{
+          padding: "20px",
+          height: "230px",
+          width: "100%",
+          paddingLeft: "7%",
+          paddingRight: "7%",
+          marginBottom: "20px"
+        }}>
+          <div
+            style={{
+              fontWeight: 900,
+              fontSize: 40,
+              fontFamily: "Fjalla One",
+              textAlign: "left",
+              color: "black"
+            }}
+          >
+            {text.split("\n")[0].replace("#", "")}
+          </div>
+          <DeatailTitle name={Upper} />
         </div>
-        <DeatailTitle name={Upper} />
-        <StyledReactMarkdown source={text}></StyledReactMarkdown>
+        <StyledReactMarkdown source={text.split("\n").slice(2).join("\n")}></StyledReactMarkdown>
         <RemoteBtn />
       </MainDiv>
       <div
