@@ -28,9 +28,9 @@ const Main: React.FC = () => {
     const slicedList = articleList.slice(0, count);
     forRender = slicedList.map((data: any) => {
       return (
-        <Col key={data["title"]} span={6}>
+        <Col key={data["title"]} span={8}>
           <Board data={data} handleTag={handleTag} />
-          <div style={{ margin: "20px" }} />
+          {/* <div style={{ margin: "20px" }} /> */}
         </Col>
       );
     });
@@ -48,7 +48,7 @@ const Main: React.FC = () => {
     articleList.map(data => {
       if(data["category"] === tag){
         filterArticleArr.push(
-          <Col key={data["title"]} span={6}>
+          <Col key={data["title"]} span={8}>
             <Board data={data} handleTag={handleTag} />
           </Col>
         );
@@ -66,8 +66,8 @@ const Main: React.FC = () => {
   }, [viewCount]);
 
   return (
-    <div style={{padding:"10px", backgroundColor:"#f4f5f8"}}>
-      <Row style={{paddingLeft:"100px", paddingRight:"100px"}}>
+    <div style={{padding:"10px", backgroundColor:"white"}}>
+      <Row style={{paddingLeft:"17%", paddingRight:"17%", margin:"0px"}} gutter={[40, 40]}>
           {articlesForView}
       </Row>
       <div style={{textAlign: "center"}}>
