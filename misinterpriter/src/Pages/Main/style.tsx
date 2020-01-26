@@ -1,7 +1,7 @@
 import sc from 'styled-components'
 
 export const ReadMoreBtn = sc.button`
-  width: 30%;
+  width: 20%;
   height: 50px;
   border-radius: 5px;
   border: 1px solid #eff0f4;

@@ -1,7 +1,6 @@
 import sc from 'styled-components'
 
 export const Box = sc.div`
-  margin: 10px;
   background: #fff;
   border: 1px solid #eff0f4;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);

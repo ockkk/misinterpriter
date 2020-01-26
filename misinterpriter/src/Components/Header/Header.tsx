@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Link} from 'react-router-dom'
-import { Box, Logo, Category } from './style';
+import { Box, Logo, Category, CategoryBox } from './style';
 
 const Header: React.FC = () => {
   return <Box>
@@ -8,7 +8,7 @@ const Header: React.FC = () => {
             <Logo src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2Flb7fJ%2FbtqBeT6jL5R%2FaOKG42vUgVzibusCH4z4L1%2Fimg.png"/>
           </a>
           <Router>
-            <div style={{"paddingTop": "10px"}}>
+            <CategoryBox>
               <a href="http://localhost:3000/"> 
                 <Category>
                   Article List
@@ -24,7 +24,7 @@ const Header: React.FC = () => {
                   Member
                 </Category>
               </Link>
-            </div>
+            </CategoryBox>
           </Router>
         </Box>
 }
