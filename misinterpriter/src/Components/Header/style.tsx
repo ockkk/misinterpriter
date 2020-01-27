@@ -1,25 +1,32 @@
 import sc from 'styled-components'
 
 export const Box = sc.div`
-  background-color: #f4f5f8;
-  height: 140px;
-  padding-left: 100px;
-  padding-right: 100px;
+  height: 75px;
+  padding-top: 10px;
+  background-color: white;
+  padding-left: 16%;
+  padding-right: 16%;
   position: sticky;
   z-index: 3;
   width: 100%;
   top: 0px;
+  box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
 `
 
 export const Logo = sc.img`
   padding-left: 10px;
   padding-top: 20px;
-  width: 450px;
+  width: 250px;
 `
 
+export const CategoryBox = sc.span`
+  position: relative;
+  float: right;
+  top: 23px;
+`
 export const Category = sc.span`
   color: gray;
-  font-size: 30px;
+  font-size: 20px;
   position: relative;
   left: 10px;
   font-weight: 700;
