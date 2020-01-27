@@ -1,6 +1,6 @@
 # React.js 웹 사이트를 추적할 수 있도록 Google Analytics를 설정하기
 
-*본 기사는 [Lawrence Tan ](https://medium.com/@lawrey?source=post_page-----f49c2411d398----------------------)의 [Setup Google Analytics to track your React.js website within minutes.](https://medium.com/google-cloud/tracking-site-visits-on-react-app-hosted-in-google-cloud-using-google-analytics-f49c2411d398)을 번역한 기사입니다.*
+_본 기사는 [Lawrence Tan ](https://medium.com/@lawrey?source=post_page-----f49c2411d398----------------------)의 [Setup Google Analytics to track your React.js website within minutes.](https://medium.com/google-cloud/tracking-site-visits-on-react-app-hosted-in-google-cloud-using-google-analytics-f49c2411d398)을 번역한 기사입니다._
 
 ![](https://miro.medium.com/max/612/1*f4P0drxh_F6EMMzyGOEr3g.png)
 
@@ -20,7 +20,7 @@
 
 이제 React-GA와 통합을 시작하겠습니다! 터미널로 이동해서 Github 웹 사이트에 나와 있는 지침에 따라서 패키지를 설치합니다.
 
-``` 
+```
 $ npm install react-ga --save
 ```
 
@@ -29,15 +29,15 @@ bower을 사용하신다면, `npm` 을 `bower` 로 바꾸시기만 하면 됩니
 이제 `App.js` 로 가서 아래의 코드를 맨 윗줄에 삽입하세요.
 
 ```jsx
-import ReactGA from 'react-ga';
+import ReactGA from "react-ga";
 ```
 
 그런 다음 동일한 파일 내에서 여러분의 트래킹 코드를 이용해서 어느 수집기가 데이터를 어딘가에 넣을지 GA가 알 수 있도록 `ReactGA` 를 초기화하는 함수를 생성합니다:
 
-``` jsx
+```jsx
 function initializeReactGA() {
-    ReactGA.initialize('UA-123791717-1');
-    ReactGA.pageview('/homepage');
+  ReactGA.initialize("UA-123791717-1");
+  ReactGA.pageview("/homepage");
 }
 ```
 
@@ -51,8 +51,8 @@ function initializeReactGA() {
 
 ```jsx
 ReactGA.event({
-  category: 'User',
-  action: 'Create an Account'
+  category: "User",
+  action: "Create an Account"
 });
 ```
 
