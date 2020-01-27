@@ -10,7 +10,7 @@ export const RemoteBtn: React.FC = () => {
     <div
       style={{
         position: "fixed",
-        right: "6.5%",
+        right: "12.5%",
         bottom: "45%"
       }}
     >

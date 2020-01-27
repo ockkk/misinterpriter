@@ -19,7 +19,7 @@ export const MainDiv = styled.div`
 `;
 
 export const NaviBtn = styled(Button)`
-  width: 50px;
+  width: 100%;
   height: 25px;
   font-size: 5px;
   text-transform: uppercase;
@@ -30,17 +30,14 @@ export const NaviBtn = styled(Button)`
   border-radius: 35px;
   cursor: pointer;
   outline: none;
-  margin: 1%;
+  margin-bottom: 4px;
 `;
 
 export const BtnConatiner = styled.div`
-  background-color: black;
-  width: 58px;
-  height: 78px;
+  width: 100%;
+  height: 80px;
   text-align: center;
   border-radius: 10px;
-  padding-top: 21%;
-  border: 0.5px solid white;
 `;
 
 export const TopDiv = styled.div`
