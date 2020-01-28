@@ -23,6 +23,11 @@ export const CategoryBox = sc.span`
   position: relative;
   float: right;
   top: 23px;
+  &: after {
+    content: "";
+    clear: both;
+   display: table;
+  }
 `
 export const Category = sc.span`
   color: gray;
