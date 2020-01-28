@@ -2,7 +2,6 @@ import React from "react";
 
 import {
   SectionMember,
-  Title,
   Grid,
   GridItem,
   UserImage,
