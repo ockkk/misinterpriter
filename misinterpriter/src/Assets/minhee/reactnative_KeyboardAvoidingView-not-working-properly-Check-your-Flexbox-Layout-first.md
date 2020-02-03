@@ -1,4 +1,4 @@
-## KeyboardAvoidingView가 잘 동작하지 않나요? Flexbox 레이아웃을 확인해 보세요.md
+# KeyboardAvoidingView가 잘 동작하지 않나요? Flexbox 레이아웃을 확인해 보세요
 
 ![img](https://miro.medium.com/max/2400/1*y6C4nSvy2Woe0m7bWEn4BA.png)
 
