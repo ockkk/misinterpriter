@@ -3,7 +3,7 @@
     {
       "name": "minhee",
       "name_kr": "김민희",
-      "email": null,
+      "email": "mini150146@gmail.com",
       "image": "../../Assets/image/profile/minhee.png",
       "message": null
     },
@@ -19,12 +19,12 @@
       "name_kr": "장우전",
       "email": "wj9304@gmail.com",
       "image": "../../Assets/image/profile/ujeon.png",
-      "message": null
+      "message": "슬랭은... 어떻게 배우죠?"
     },
     {
       "name": "jongock",
       "name_kr": "황종옥",
-      "email": "jongokhwang@gmail.com",
+      "email": "jongokhwng@gmail.com",
       "image": "../../Assets/image/profile/jongock.jpg",
       "message": null
     }

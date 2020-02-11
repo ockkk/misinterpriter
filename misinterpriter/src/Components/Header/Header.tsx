@@ -5,14 +5,14 @@ import { Box, Logo, Category, CategoryBox } from "./style";
 const Header: React.FC = () => {
   return (
     <Box>
-      <a href="http://misinterpriter.com">
+      <Link to="/">
         <Logo src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2Flb7fJ%2FbtqBeT6jL5R%2FaOKG42vUgVzibusCH4z4L1%2Fimg.png" />
-      </a>
+      </Link>
 
       <CategoryBox>
-        <a href="http://misinterpriter.com">
+        <Link to="/">
           <Category>Article List</Category>
-        </a>
+        </Link>
         {/* <Link to="feedback"> */}
         <Category
           onClick={() =>
@@ -24,7 +24,7 @@ const Header: React.FC = () => {
           Feedback
         </Category>
         {/* </Link> */}
-        <Link to="member">
+        <Link to="/member">
           <Category>Member</Category>
         </Link>
       </CategoryBox>
