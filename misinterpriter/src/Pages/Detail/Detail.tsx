@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import ReactGA from "react-ga";
+
 import { StyledReactMarkdown, MainDiv } from "./style";
 import FootBar from "../../Components/Footbar/Footbar";
 import { RemoteBtn } from "./RemoteBtn";
@@ -13,6 +15,11 @@ import { DeatailTitle } from "./DeatailTitle";
 // };
 
 export const Detail: React.FC = (props: any) => {
+  const page = `/${props.match.params.name}/${props.match.params.title}`;
+
+  ReactGA.set({ page });
+  ReactGA.pageview(page);
+
   const [text, setText] = useState<string>("");
 
   useEffect(() => {
@@ -37,14 +44,16 @@ export const Detail: React.FC = (props: any) => {
       }}
     >
       <MainDiv>
-        <div style={{
-          padding: "20px",
-          height: "230px",
-          width: "100%",
-          paddingLeft: "7%",
-          paddingRight: "7%",
-          marginBottom: "20px"
-        }}>
+        <div
+          style={{
+            padding: "20px",
+            height: "230px",
+            width: "100%",
+            paddingLeft: "7%",
+            paddingRight: "7%",
+            marginBottom: "20px"
+          }}
+        >
           <div
             style={{
               fontWeight: 900,
@@ -58,7 +67,12 @@ export const Detail: React.FC = (props: any) => {
           </div>
           <DeatailTitle name={Upper} />
         </div>
-        <StyledReactMarkdown source={text.split("\n").slice(2).join("\n")}></StyledReactMarkdown>
+        <StyledReactMarkdown
+          source={text
+            .split("\n")
+            .slice(2)
+            .join("\n")}
+        ></StyledReactMarkdown>
         <RemoteBtn />
       </MainDiv>
       <div
@@ -72,8 +86,8 @@ export const Detail: React.FC = (props: any) => {
         <Discussion
           disqusShortname="misinterpreters"
           disqusConfig={{
-            url: `http://localhost:3000/${props.postTitle}`,
-            identifier: `http://localhost:3000/${props.postTitle}`,
+            url: `https://misinterpriter.com/${props.postTitle}`,
+            identifier: `https://misinterpriter.com/${props.postTitle}`,
             title: `${props.postTitle}`
           }}
         />

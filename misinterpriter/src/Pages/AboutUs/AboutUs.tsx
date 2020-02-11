@@ -1,4 +1,7 @@
 import React from "react";
+import ReactGA from "react-ga";
+
+import { RouteComponentProps } from "react-router-dom";
 
 import {
   SectionMember,
@@ -27,7 +30,14 @@ const profileImage: Image = {
   jongock: require("../../Assets/image/profile/jongock.jpg")
 };
 
-const AboutUs: React.FC = () => {
+const AboutUs: React.FC<RouteComponentProps> = ({
+  location
+}: RouteComponentProps) => {
+  const page = location.pathname;
+
+  ReactGA.set({ page });
+  ReactGA.pageview(page);
+
   const interpreterInfo: JSX.Element[] = interpreters.interpreters.map(el => {
     return (
       <GridItem key={el.name}>
