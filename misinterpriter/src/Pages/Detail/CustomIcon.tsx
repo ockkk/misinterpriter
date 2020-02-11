@@ -9,11 +9,9 @@ export const CustomIcon = (props: any) => {
     for (let i = 0; i < arr.length; i = i + 1) {
       if (props.name === arr[i].name.toUpperCase()) {
         if (props.thema === "github") {
-          console.log("github 이동");
           return "https://www.opentutorials.org/course/2418/13406";
         }
         if (props.thema === "home") {
-          console.log("github 이동", arr[i]["name"]);
           return "https://poiemaweb.com/css3-flexbox";
         }
       }
