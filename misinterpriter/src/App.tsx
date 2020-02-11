@@ -1,10 +1,15 @@
 import React from "react";
+import ReactGA from "react-ga";
+
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+
 import "./App.css";
 import Header from "./Components/Header/Header";
 import Main from "./Pages/Main/Main";
 import AboutUs from "./Pages/AboutUs/AboutUs";
 import { Detail } from "../src/Pages/Detail/Detail";
+
+ReactGA.initialize("UA-158177035-2");
 
 const App: React.FC = () => {
   return (
