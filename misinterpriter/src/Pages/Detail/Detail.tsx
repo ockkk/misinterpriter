@@ -35,7 +35,7 @@ export const Detail: React.FC = (props: any) => {
   }, [props.match.params.name, props.match.params.title]);
 
   const Upper = props.match.params.name.toUpperCase();
-  // console.log(Upper);
+
   return (
     <div
       style={{
@@ -86,9 +86,9 @@ export const Detail: React.FC = (props: any) => {
         <Discussion
           disqusShortname="misinterpreters"
           disqusConfig={{
-            url: `https://misinterpriter.com/${props.postTitle}`,
-            identifier: `https://misinterpriter.com/${props.postTitle}`,
-            title: `${props.postTitle}`
+            url: `https://misinterpriter.com/${props.match.params.name}/${props.match.params.title}`,
+            identifier: `https://misinterpriter.com//${props.match.params.name}/${props.match.params.title}`,
+            title: `${props.match.params.title}`
           }}
         />
       </div>
