@@ -17,14 +17,14 @@ const Header: React.FC = () => {
         <Category
           onClick={() =>
             alert(
-              "준비중 입니다🙂 feedback은 \njongokhwang@gmail.com\nwj9304@gmail.com\nwjsdbtjs131313@gmail.com 으로 보내주세요"
+              "준비중 입니다🙂 feedback은\nmini150146@gmail.com\njongock.dev@gmail.com \nwj9304@gmail.com\nwjsdbtjs131313@gmail.com 으로 보내주세요"
             )
           }
         >
           Feedback
         </Category>
         {/* </Link> */}
-        <Link to="/member">
+        <Link to="member">
           <Category>Member</Category>
         </Link>
       </CategoryBox>
