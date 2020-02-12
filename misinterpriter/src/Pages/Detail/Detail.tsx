@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import {Helmet} from 'react-helmet'
 import { StyledReactMarkdown, MainDiv } from "./style";
 import FootBar from "../../Components/Footbar/Footbar";
 import { RemoteBtn } from "./RemoteBtn";
@@ -36,6 +37,10 @@ export const Detail: React.FC = (props: any) => {
         height: "100%"
       }}
     >
+      <Helmet>
+        <title>{text.split("\n")[0].replace("#", "")}</title>
+        <meta name="description" content={text.split("\n").slice(2,5).join("\n")}/>
+      </Helmet>
       <MainDiv>
         <div style={{
           padding: "20px",
