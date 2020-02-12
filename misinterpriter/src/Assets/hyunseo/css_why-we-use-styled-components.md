@@ -1,16 +1,10 @@
 # styled-components 를 사용해야하는 8가지 이유
 
-<br/>
-
 - **본기사는 [8 reasons to use styled-components (FEBRUARY 28, 2019 Prisma)](https://blog.logrocket.com/8-reasons-to-use-styled-components-cf3788f0bb4d/) 을 번역한 기사입니다.**
-
-<br/>
 
 ![logo](https://i1.wp.com/storage.googleapis.com/blog-images-backup/1*0wLQ0p3qBo1bBt5km_nUXQ.png?zoom=2&resize=324%2C316&ssl=1)
 
 `요약 : 이 기사에서는 styled-components 의 다양한 이점으로 CSS-in-JS 프레임워크로 채택하는 것을 고려해야 하는 이유를 살펴보겠습니다.`
-
-<br/>
 
 ## **styled-components 란 무엇일까요?**
 
@@ -19,8 +13,6 @@
 
 본질적으로, styled-coponents 는 styled-components 라이브러리를 사용하여 리액트 컴포넌트를 쉽게 만들 수 있으며
 Javascript 코드 내에서 일반 CSS로 구성 요소의 스타일을 지정할 수 있습니다. 공식 문서 페이지에서 아래 예제를 볼 수 있습니다.
-
-<br/>
 
 ```js
 const Button = styled.a`
@@ -65,8 +57,6 @@ render(
 CSS-in-JS 의 주제는 프론트 엔드 커뮤니티에서 특히 반응 개발자들 사이에서 큰 논란거리임을 알고 있으므로
 개방적인 마음으로 글을 읽어주시길 바랍니다.
 
-<br/>
-
 ## **React Components 스타일링**
 
 React 컴포넌트를 스타일링 하는 방법은 여러가지가 존재합니다.
@@ -104,8 +94,6 @@ styled-components, emotion, jss, radium, aphrodite 등 다양한 CSS-in-JS 프�
 [여기](https://michelebertoli.github.io/css-in-js/)에서 비교표를 볼 수 있습니다.
 여기서 가장 유망하고 인기가 많은 것은 styled-components 입니다.
 지난 달에만 60000회 이상 다운로드 되었고 매우 [빠르게 널리 성장하는 것](https://www.npmtrends.com/jss-vs-aphrodite-vs-radium-vs-styled-components-vs-glamorous-vs-emotion-vs-styletron)은 놀라운 일이 아닙니다.
-
-<br/>
 
 ## 우리는 왜 styled-components 를 사용해야 할까요?
 
