@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import {Helmet} from 'react-helmet'
 import ReactGA from "react-ga";
 
 import { StyledReactMarkdown, MainDiv } from "./style";
@@ -43,6 +44,10 @@ export const Detail: React.FC = (props: any) => {
         height: "100%"
       }}
     >
+      <Helmet>
+        <title>{text.split("\n")[0].replace("#", "")}</title>
+        <meta name="description" content={text.split("\n").slice(2,5).join("\n")}/>
+      </Helmet>
       <MainDiv>
         <div
           style={{
