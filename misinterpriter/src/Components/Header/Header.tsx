@@ -5,19 +5,19 @@ import { Box, Logo, Category, CategoryBox } from "./style";
 const Header: React.FC = () => {
   return (
     <Box>
-      <a href="http://misinterpriter.com">
+      <Link to="/">
         <Logo src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2Flb7fJ%2FbtqBeT6jL5R%2FaOKG42vUgVzibusCH4z4L1%2Fimg.png" />
-      </a>
+      </Link>
 
       <CategoryBox>
-        <a href="http://misinterpriter.com">
+        <Link to="/">
           <Category>Article List</Category>
-        </a>
+        </Link>
         {/* <Link to="feedback"> */}
         <Category
           onClick={() =>
             alert(
-              "준비중 입니다🙂 feedback은 \njongokhwang@gmail.com\nwj9304@gmail.com\nwjsdbtjs131313@gmail.com 으로 보내주세요"
+              "준비중 입니다🙂 feedback은\nmini150146@gmail.com\njongock.dev@gmail.com \nwj9304@gmail.com\nwjsdbtjs131313@gmail.com 으로 보내주세요"
             )
           }
         >

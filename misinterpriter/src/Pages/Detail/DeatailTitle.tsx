@@ -2,20 +2,25 @@ import React from "react";
 import styled from "styled-components";
 import { Avatar } from "antd";
 import { CustomIcon } from "./CustomIcon";
-import interpreters from "../../Assets/interpreters.json";
-import ujeon from "../../Assets/image/profile/ujeon.png"
-import jongock from "../../Assets/image/profile/jongock.jpg"
-import minhee from "../../Assets/image/profile/minhee.png"
-import hyunseo from "../../Assets/image/profile/hyunseo.jpg"
+
+import ujeon from "../../Assets/image/profile/ujeon.png";
+import jongock from "../../Assets/image/profile/jongock.jpg";
+import minhee from "../../Assets/image/profile/minhee.png";
+import hyunseo from "../../Assets/image/profile/hyunseo.jpg";
 
 export const DeatailTitle = (props: any) => {
-  const profileArr:any = {"UJEON": ujeon, "JONOCK": jongock, "MINHEE": minhee, "HYUNSEO": hyunseo}
+  const profileArr: any = {
+    UJEON: ujeon,
+    JONOCK: jongock,
+    MINHEE: minhee,
+    HYUNSEO: hyunseo
+  };
 
-  let profile
-  for(let i in profileArr){
-    if(props.name === i){
-      profile = profileArr[i]
-      break
+  let profile;
+  for (let i in profileArr) {
+    if (props.name === i) {
+      profile = profileArr[i];
+      break;
     }
   }
 
@@ -27,7 +32,6 @@ export const DeatailTitle = (props: any) => {
   //     }
   //   }
   // };
-
 
   return (
     <MainBox>
