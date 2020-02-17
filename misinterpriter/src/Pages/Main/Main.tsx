@@ -28,7 +28,7 @@ const Main: React.FC = () => {
     const slicedList = articleList.slice(0, count);
     forRender = slicedList.map((data: any) => {
       return (
-        <Col key={data["title"]} span={8}>
+        <Col key={data["title"]} span={8} xs={24} sm={24} md={12} lg={8} xl={8}>
           <Board data={data} handleTag={handleTag} />
           {/* <div style={{ margin: "20px" }} /> */}
         </Col>
@@ -48,7 +48,7 @@ const Main: React.FC = () => {
     articleList.map(data => {
       if(data["category"] === tag){
         filterArticleArr.push(
-          <Col key={data["title"]} span={8}>
+          <Col key={data["title"]} span={8} xs={24} sm={12} md={12} lg={8}>
             <Board data={data} handleTag={handleTag} />
           </Col>
         );
