@@ -34,7 +34,6 @@ const Main: React.FC<RouteComponentProps> = ({
   const [articlesForView, setArticlesForView] = useState();
   const [viewCount, setViewCount] = useState(12);
   const count = 12;
-
   const handleReadMore = () => {
     if (articleList.length > viewCount) {
       setViewCount(viewCount + count);
@@ -51,7 +50,7 @@ const Main: React.FC<RouteComponentProps> = ({
       articleList.map(data => {
         if (data["category"] === tag) {
           filterArticleArr.push(
-            <Col key={data["title"]} span={8}>
+            <Col key={data["title"]} xs={24} sm={12} md={12} lg={8} xl={8}>
               <Board data={data} handleTag={handleTag} />
             </Col>
           );
@@ -65,9 +64,8 @@ const Main: React.FC<RouteComponentProps> = ({
       const slicedList = articleList.slice(0, count);
       forRender = slicedList.map((data: any) => {
         return (
-          <Col key={data["title"]} span={8}>
+          <Col key={data["title"]} xs={24} sm={12} md={12} lg={8} xl={8}>
             <Board data={data} handleTag={handleTag} />
-            {/* <div style={{ margin: "20px" }} /> */}
           </Col>
         );
       });
@@ -80,10 +78,18 @@ const Main: React.FC<RouteComponentProps> = ({
   return (
     <div style={{ padding: "10px", backgroundColor: "white" }}>
       <Row
-        style={{ paddingLeft: "17%", paddingRight: "17%", margin: "0px" }}
-        gutter={[40, 40]}
+        type="flex" 
+        justify="center"
+        // style={{ paddingLeft: "17%", paddingRight: "17%", margin: "0px" }}
+        // gutter={[40, 40]}
       >
-        {articlesForView}
+        <Col xs={20} sm={20} md={20} lg={20} xl={16}>
+          <Row
+          gutter={[40, 40]}
+          >
+            {articlesForView}
+          </Row>
+        </Col>
       </Row>
       <div style={{ textAlign: "center" }}>
         <ReadMoreBtn onClick={handleReadMore}>read more</ReadMoreBtn>
