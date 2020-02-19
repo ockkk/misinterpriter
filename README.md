@@ -1,40 +1,22 @@
 # 오역자들
+영어 개발 문서에 익숙하지 않는 사람들이 모여 주 1회 영문서를 번역하는 스터디입니다. 
+번역한 영문서를 공유하기도 하고 좀 더 보기 쉽게 하기 위한 웹페이지를 개발하였습니다. 
+아직 부족한 부분이 많아 계속해서 업데이트 할 예정입니다. 
 
-영문 기술 블로깅/docs 번역 모임!
+![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2Fdg9WYX%2FbtqBTLfroMK%2FvwJ5I7P3DTEBxqZoSkzZpK%2Fimg.png)
 
-## 오역자들 web page build project👀👀
+# 앱 실행 화면
+[![misinterpriter](http://img.youtube.com/vi/uGnNU2AC4GU/3.jpg)](https://youtu.be/uGnNU2AC4GU)
 
-#### Git rules
+# Front-end Skill
+react, antd, styled-component,tpyescript
 
-- 명령형으로 작성. e.g. ✨ Add navigator component
-- 커밋 메시지 앞에 emoji 붙이기(https://gitmoji.carloscuesta.me/)
-  - gitmoji cli [설치](https://github.com/carloscuesta/gitmoji-cli)를 권장합니다. 사용하기 편하므로..
-- 작업 단위 별로 커밋하기.
-- gitmoji (추가적으로 필요한 이모지는 gitmoji 사이트 참고)
-  - ✨(sparkles): 새로운 컴포넌트, 기능 추가
-  - 📝(pencil): markdown 파일 등 수정
-  - 🙈(see_no_evil): .gitignore 추가/수정
-  - 💄(lipstick): UI 수정/추가
-  - 🚧(construction): 작업 진행 중
-  - 🎨(art): js 수정
-  - 🔥(fire): 코드 삭제
-  - 🐛(bug): 버그 수정
-  - ➕(heavy_plus_sign): 디펜던시 추가
-  - ➖(heavy_minus_sign): 디펜던시 삭제
-  - 💩(poop): 앞으로 수정해야 할 나쁜 코드!
-  - 👌(ok_hand): 코드 리뷰 후 코드 수정
+# 설치 방법
+```sh
+npm install
+```
 
-## MD file 작성 시 유의사항👀👀
+# 업데이트 내역
+* 0.1.0
+    * 첫 출시
 
-#### MarkDown rules
-
-- 마크다운 문법만 사용하기 (Tag 사용 🙅🏻‍♀️)
-  - ex: `<img src=url /> -> [제목](url)`
-- 제목에 띄어쓰기 대신 '-' 사용하고, 카테고리 태그와 번역자 이름 달기 ( 카테고리\_이름\_포스팅-제목.md)
-  - ex: javascript_hyunseo_what-is-오역자들?.md
-- 첫 줄은 썸네일 이미지 (추후에 변경될 수 도 있습니다.)
-
-### Tag
-
-- [ frontend , backend , tip , security , git , cli , tdd , etc ]
-- [ css , javascript , react , nodejs , graphql , typescript , reactnative ]
